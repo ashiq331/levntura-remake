@@ -81,6 +81,14 @@ a {
   color: inherit;
 }
 
+h1
+{
+  font-size: var(--h1);
+  font-family: var(--gelion-bold);
+  line-height: 65px;
+  font-weight: 900;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -147,18 +155,35 @@ img {
   position: absolute;
   top: 60%;
   color: var(--white);
+  width: 65%;
 }
 
-/* 
-h1 {
-  padding-top: 30rem;
-  padding-left: 3rem;
-  font-size: 7vw;
-  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.815);
-  -webkit-text-fill-color: transparent;
-  font-family: var(--gelion-black);
-  font-weight: 900;
-} */
+.home__top
+{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.home__down
+{
+  margin-top: 1rem;
+}
+
+
+.home__down .liner
+{
+  height: 1px;
+  width: 70%;
+  background-color: #a5a5a5;
+}
+.btn_links
+{
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 /*=============== CARD ===============*/
 
