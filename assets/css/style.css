@@ -1,24 +1,66 @@
-/*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600&display=swap");
+/* --------------- Fonts -------------------- */
+@font-face {
+  font-family: Gelion-Black;
+  src: url(../fonts/Gelion\ Black.woff);
+}
 
-/*=============== VARIABLES CSS ===============*/
+@font-face {
+  font-family: Gelion-Regular;
+  src: url(../fonts/Gelion\ Regular.woff);
+}
+
+@font-face {
+  font-family: Gelion-Light;
+  src: url(../fonts/Gelion\ Light.woff);
+}
+
+@font-face {
+  font-family: Gelion-Medium;
+  src: url(../fonts/Gelion\ Medium.woff);
+}
+
+@font-face {
+  font-family: Gelion-Bold;
+  src: url(../fonts/Gelion\ Bold.woff);
+}
+
+@font-face {
+  font-family: Gelion-Semibold;
+  src: url(../fonts/Gelion\ SemiBold.woff);
+}
+
 :root {
-  /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: hsl(38, 92%, 58%);
-  --first-color-light: hsl(38, 100%, 78%);
-  --first-color-alt: hsl(32, 75%, 50%);
-  --second-color: hsl(195, 75%, 52%);
-  --dark-color: hsl(212, 40%, 12%);
-  --white-color: hsl(212, 4%, 95%);
-  --body-color: hsl(212, 42%, 15%);
-  --container-color: hsl(212, 42%, 20%);
+  --black: #0c0f11;
+  --dark-bg: #0c0f11;
+  --white: #ffffff;
+  --sky-blue: #7abaff;
+  --yellow: #ffd35c;
+  --green: #89e0ba;
+  --title-color: #fd9444;
+  --heading-color: #ffffff;
 
-  /*========== Font and typography ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: "Bai Jamjuree", sans-serif;
-  --h2-font-size: 1.25rem;
-  --normal-font-size: 1rem;
+  --bg-one: #d8e6e6;
+  --bg-two: #000037;
+  --bg-three: #faf0e1;
+  --bg-four: #ffd35c;
+  --footer-bg: #5862ed;
+
+  --gelion-black: "Gelion-Black";
+  --gelion-regular: "Gelion-Regular";
+  --gelion-light: "Gelion-Light";
+  --gelion-medium: "Gelion-Medium";
+  --gelion-bold: "Gelion-Bold";
+  --gelion-semibold: "Gelion-Semibold";
+
+  --h1: 74px;
+  --h2: 34px;
+  --h3: 24px;
+  --h4: 20px;
+  --h5: 18px;
+  --h6: 14px;
+  --text: 15px;
+  --p: 16px;
+  --link: 12px;
 }
 
 /*=============== BASE ===============*/
@@ -29,10 +71,9 @@
 }
 
 body {
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-  background-color: var(--body-color);
-  color: var(--white-color);
+  font-family: var(--gelion-regular);
+  background-color: var(--white);
+  color: black;
 }
 
 a {
@@ -47,13 +88,12 @@ img {
 
 h1 {
   padding-top: 30rem;
-  padding-left: 3.5rem;
+  padding-left: 3rem;
   font-size: 7vw;
-  -webkit-text-stroke: 1px rgba(236, 236, 236, 0.815);
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.815);
   -webkit-text-fill-color: transparent;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: var(--gelion-black);
 }
-
 
 /*=============== CARD ===============*/
 .container {
@@ -72,16 +112,12 @@ h1 {
   border-radius: 0.2rem;
   overflow: hidden;
   padding-left: rem;
-
 }
 
-.card__image
-{
-    height: 500px;
-    background-color: red;
-    
+.card__image {
+  height: 500px;
+  background-color: red;
 }
-
 
 /* Swiper class */
 .swiper-button-prev:after,
