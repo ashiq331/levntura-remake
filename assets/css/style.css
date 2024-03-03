@@ -78,6 +78,7 @@ body {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 img {
@@ -86,6 +87,69 @@ img {
   height: auto;
 }
 
+.stroke_text {
+  -webkit-text-stroke: 1px rgba(247, 247, 247, 0.852);
+  -webkit-text-fill-color: transparent;
+  font-family: var(--gelion-bold);
+  font-size: 4rem;
+}
+
+.container {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  height: 80px;
+  padding: 20px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__items {
+  display: flex;
+  list-style-type: none;
+  gap: 54px;
+}
+
+.nav__items li a {
+  color: white;
+  font-size: var(--link);
+  font-weight: normal;
+  text-align: center;
+}
+
+.home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.home video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.home__content {
+  position: absolute;
+  top: 60%;
+  color: var(--white);
+}
+
+/* 
 h1 {
   padding-top: 30rem;
   padding-left: 3rem;
@@ -93,15 +157,10 @@ h1 {
   -webkit-text-stroke: 1px rgba(0, 0, 0, 0.815);
   -webkit-text-fill-color: transparent;
   font-family: var(--gelion-black);
-}
+  font-weight: 900;
+} */
 
 /*=============== CARD ===============*/
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
 
 .card__container {
   padding-block: 8rem;
