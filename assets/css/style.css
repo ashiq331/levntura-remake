@@ -150,13 +150,6 @@ p {
   font-size: var(--fs-5);
 }
 
-h1 {
-  font-size: var(--h1);
-  font-family: var(--gelion-bold);
-  line-height: 65px;
-  font-weight: 900;
-}
-
 img {
   display: block;
   max-width: 100%;
@@ -189,7 +182,7 @@ img {
   right: 0;
   padding: 30px 20px;
   width: 100%;
-  z-index: 4;
+  z-index: 999;
 }
 
 .header.scrolled {
@@ -205,12 +198,11 @@ img {
 }
 
 .header .logo img {
-  width: 124px;
-  padding-left: 0px;
+  width: 164px;
 }
 
 .header.scrolled .logo img {
-  width: 124px;
+  width: 164px;
   filter: grayscale(100%) brightness(0%);
 }
 
@@ -220,10 +212,12 @@ img {
   right: 0;
   background-color: var(--black);
   color: var(--white);
+  display: flex;
+  align-items: center;
   width: 70%;
   height: 100%;
   padding: 20px;
-  z-index: 1;
+  z-index: 9999;
   transform: translateX(100%);
   visibility: hidden;
   transition: 0.25s var(--cubic-in);
@@ -237,31 +231,29 @@ img {
 
 .navbar .wrapper .nav__logo {
   position: absolute;
-  width: 112px;
+  width: 162px;
   top: 2rem;
 }
 
 .navbar .navbar-list {
   position: absolute;
-  left: -0.6rem;
+  left: 1rem;
 }
 
 .navbar .navbar-list .navbar-link {
   display: block;
-  margin-top: 10px;
-  font-size: 16pt;
+  font-size: var(--h3);
 }
 
 .nav-close-btn {
   transition: var(--transition-1);
   position: absolute;
-  top: 1rem;
+  top: 1.6rem;
   right: 1rem;
 }
 
-.nav-close-btn img {
-  filter: grayscale(0%) brightness(100%);
-  width: 34px;
+.nav-close-btn i {
+  font-size: 40px;
 }
 
 .navbar-link {
@@ -284,24 +276,20 @@ img {
 }
 
 header .btn {
+  margin-right: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--white);
-  gap: 12px;
-  height: 75px;
-  padding: 24px 36px;
-  border-radius: 0 0 0 27px;
-  font-size: var(--fs-6);
-  font-family: var(--ff-azeret-regular);
+  padding: 13px 46px;
+  border: 1px solid var(--white);
+  color: var(--white);
 }
 
 .header .btn:hover {
-  background-color: var(--white);
+  background-color: rgba(230, 230, 230, 0.152);
 }
 
 .header.scrolled .btn {
-  background-color: var(--black);
   color: white;
 }
 
@@ -313,12 +301,18 @@ header .btn {
   width: 19px;
 }
 
-.nav-open-btn img {
-  width: 20px;
+.nav-open-btn i {
+  font-size: 25px;
+  color: white;
 }
 
-.header.scrolled .nav-open-btn img {
-  filter: grayscale(100%) brightness(0%);
+.nav-open-btn.scrolled i {
+  font-size: 25px;
+  color: var(--black);
+}
+
+.header.scrolled .nav-open-btn i {
+  color: var(--black);
 }
 
 .overlay {
@@ -335,23 +329,14 @@ header .btn {
   pointer-events: all;
 }
 
-/**
-* responsive for large than 992px screen
-*/
-
 @media (min-width: 992px) {
-  .header {
-    padding: 0;
-  }
-
   .header.scrolled .logo img {
-    width: 152px;
+    width: 162px;
     filter: grayscale(100%) brightness(0%);
   }
 
   .header .logo img {
-    width: 152px;
-    padding-left: 40px;
+    width: 162px;
   }
 
   .header.scrolled {
@@ -374,7 +359,7 @@ header .btn {
   .navbar .navbar-list {
     position: relative;
     display: flex;
-    gap: 80px;
+    gap: 50px;
   }
 
   .navbar .navbar-list .navbar-link {
@@ -399,26 +384,18 @@ header .btn {
   }
 }
 
-@media screen {
-}
-
-/**
- * responsive for large than 1200px screen
- */
-
 @media (min-width: 1340px) {
   .header {
-    padding: 0;
+    padding: 25px;
   }
 
   .header.scrolled .logo img {
-    width: 152px;
+    width: 162px;
     filter: grayscale(100%) brightness(0%);
   }
 
   .header .logo img {
-    width: 152px;
-    padding-left: 40px;
+    width: 162px;
   }
 
   .header.scrolled {
@@ -449,9 +426,13 @@ header .btn {
     color: var(--black);
   }
 
+  .navbar .navbar-list .navbar-link {
+    font-size: var(--link);
+  }
+
   .navbar-list {
     position: relative;
-    gap: 80px;
+    display: flex;
   }
 
   .nav__social_links {
@@ -462,6 +443,8 @@ header .btn {
     display: none;
   }
 }
+
+/* ---------------------------------Home Start */
 
 .home {
   position: relative;
@@ -479,20 +462,41 @@ header .btn {
 }
 
 .home__content {
-  position: absolute;
+  position: relative;
   top: 60%;
+  left: 0;
   color: var(--white);
-  width: 65%;
 }
 
 .home__top {
+  padding-top: 34rem;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+  width: 90%;
+}
+
+.home__top .home-heading {
+  font-size: var(--h1);
+  font-family: var(--gelion-bold);
+  line-height: 65px;
+  font-weight: 900;
+}
+
+.home-context {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+.home-context p {
+  font-size: var(--link);
+  text-align: left;
 }
 
 .home__down {
   margin-top: 1rem;
+  width: 90%;
 }
 
 .home__down .liner {
@@ -501,78 +505,47 @@ header .btn {
   background-color: #a5a5a5;
 }
 
-
-
- .btn-area {
-  width: 170px;
-  text-align: right;
+.btn_links {
+  margin-top: 20px;
   display: flex;
-}
-
-/* ---------- Animated Button -------------- */
-
-.btn-animation {
-  margin-top: 24px;
-  border: 2px solid var(--white);
-  padding: 10px 0px;
-  color: var(--white);
-  position: relative;
-  z-index: 2;
-  height: 70px;
-  width: 130px;
-  display: flex;
-  justify-content: center;
   align-items: center;
-  cursor: pointer;
+  justify-content: space-between;
+}
+
+.btn-area {
+  font-size: var(--h6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  transition: all 0.3s ease;
+}
+
+.btn-area:hover i {
+  margin-left: 17px;
+}
+
+.btn-area i {
+  border: 1px solid var(--white);
+  padding: 15px;
   border-radius: 50px;
-  background-color: var(--black);
-  transition: .2s ease-in-out;
+  transition: all 0.3s ease;
+  margin-left: 8px;
 }
 
- .btn-animation .inner-arrow {
-  font-size: 20px;
-  color: var(--white);
-  z-index: 2;
-  margin: 0px -50px 0px 50px;
-  transition: .2s ease-in-out;
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
 }
 
-.btn-animation:hover .inner-arrow {
-  margin: unset;
-  color: var(--black) !important;
-  display: block;
-}
-
- .btn-animation:hover {
-  background: var(--white);
-  width: 160px;
-}
-
- .ab-btn {
-  color: var(--white);
-  z-index: 2;
-  margin: 0px -13px 0px 13px;
-  font-family: var(--ff-azeret-regular);
-}
-
- .btn-animation:hover .ab-btn {
-  color: var(--black) !important;
-  margin: unset;
-}
-
- .btn-animation span {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: var(--black);
-  transition: .2s linear;
+.links i{
+  border: 1px solid var(--white);
+  padding: 6px;
   border-radius: 50px;
-  z-index: 1;
-}
-
- .btn-animation:hover span {
-  height: 0%;
-  width: 50%;
+  transition: all 0.3s ease;
+  font-size: 15px;
 }
 
 /*=============== CARD ===============*/
