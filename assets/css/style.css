@@ -170,7 +170,7 @@ img {
   top: 0;
   left: 0;
   right: 0;
-  padding: 20px 0;
+  padding: 20px 20px;
   width: 100%;
   z-index: 999;
 }
@@ -320,6 +320,12 @@ header .btn {
 }
 
 @media (min-width: 992px) {
+
+  .header {
+    padding: 20px 30px;
+    position: fixed;
+  }
+
   .header.scrolled .logo img {
     width: 162px;
     filter: grayscale(100%) brightness(0%);
@@ -393,7 +399,7 @@ header .btn {
 
 @media (min-width: 1340px) {
   .header {
-    padding: 20px 0;
+    padding: 20px 30px;
     position: fixed;
   }
 
@@ -569,29 +575,19 @@ header .btn {
   padding: 4rem 0;
   background-color: var(--grey-bg);
   width: 100%;
-  z-index: 5;
+  z-index: 99;
   position: relative;
-
 }
 
-.left__card {
-  background-color: var(--white);
-  width: 693px;
-  height: 688px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: right;
-  margin-top: -10rem;
-  position: absolute;
-  z-index: 22;
-}
 
 .card__text {
-  width: 480px;
-  position: absolute;
-  right: 10%;
+  width: 680px;
+  height: 693px;
+  background-color: white;
   padding: 3rem;
+  position: absolute;
+  top: 0;
+  z-index: -1;
 }
 
 .left__card h1 {
@@ -616,17 +612,50 @@ header .btn {
   line-height: 45px;
 }
 
-
-.article_image_part {
+.article_image_part
+{
+  height: 660px;
   display: flex;
   flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  gap: 70px;
+  position: relative;
+}
+
+.article_image_part p
+{
+  width: 40%;
+  font-family: var(--gelion-regular);
+  font-size: var(--p);
+font-weight: normal;
+font-style: normal;
+color: #0c0f11;
+margin-bottom: 7rem;
+
 }
 
 .image_slider
 {
-  width: 100%;
   display: flex;
+  gap: 24px;
   z-index: 99;
+  position: absolute;
+  bottom: 3rem;
+  right: 0;
+}
+
+.image_box {
+  height: 300px;
+  width: 420px;
+
+}
+
+.image_box img {
+  height: 100%;
+
+  width: 100%;
+  object-fit: cover;
 }
 
 /*=============== CARD ===============*/

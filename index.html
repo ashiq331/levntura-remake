@@ -26,78 +26,68 @@
     <div class="main">
       <!-- ------------------- Header Start ---------------------- -->
       <header class="header" data-header>
-        <div class="container">
-          <div class="home__navabr">
-            <a href="index.html" class="logo">
-              <img src="assets/images/logo.png" alt="Levntura" />
-            </a>
+        <div class="home__navabr">
+          <a href="index.html" class="logo">
+            <img src="assets/images/logo.png" alt="Levntura" />
+          </a>
 
-            <nav class="navbar" data-navbar>
-              <div class="wrapper">
-                <a href="#">
-                  <img class="nav__logo" src="assets/images/logo.png" alt="" />
-                </a>
+          <nav class="navbar" data-navbar>
+            <div class="wrapper">
+              <a href="#">
+                <img class="nav__logo" src="assets/images/logo.png" alt="" />
+              </a>
 
-                <button
-                  class="nav-close-btn"
-                  aria-label="close menu"
-                  data-nav-toggler
+              <button
+                class="nav-close-btn"
+                aria-label="close menu"
+                data-nav-toggler
+              >
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+
+            <ul class="navbar-list">
+              <li class="navbar-item">
+                <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+              </li>
+
+              <li class="navbar-item">
+                <a href="about.html" class="navbar-link" data-nav-link
+                  >About Us</a
                 >
-                  <i class="fa-solid fa-xmark"></i>
-                </button>
-              </div>
+              </li>
 
-              <ul class="navbar-list">
-                <li class="navbar-item">
-                  <a href="index.html" class="navbar-link" data-nav-link
-                    >Home</a
-                  >
-                </li>
+              <li class="navbar-item">
+                <a href="gallery.html" class="navbar-link" data-nav-link
+                  >Gallery</a
+                >
+              </li>
 
-                <li class="navbar-item">
-                  <a href="about.html" class="navbar-link" data-nav-link
-                    >About Us</a
-                  >
-                </li>
+              <li class="navbar-item">
+                <a href="blogs.html" class="navbar-link" data-nav-link>Blogs</a>
+              </li>
 
-                <li class="navbar-item">
-                  <a href="gallery.html" class="navbar-link" data-nav-link
-                    >Gallery</a
-                  >
-                </li>
+              <li class="navbar-item">
+                <a href="careers.html" class="navbar-link" data-nav-link
+                  >Careers</a
+                >
+              </li>
 
-                <li class="navbar-item">
-                  <a href="blogs.html" class="navbar-link" data-nav-link
-                    >Blogs</a
-                  >
-                </li>
+              <li class="navbar-item">
+                <a href="contact.html" class="navbar-link" data-nav-link
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
 
-                <li class="navbar-item">
-                  <a href="careers.html" class="navbar-link" data-nav-link
-                    >Careers</a
-                  >
-                </li>
+          <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+            <i class="fa-solid fa-bars"></i>
+          </button>
 
-                <li class="navbar-item">
-                  <a href="contact.html" class="navbar-link" data-nav-link
-                    >Contact</a
-                  >
-                </li>
-              </ul>
-            </nav>
+          <a href="contact.html" class="btn">Start Now! </a>
 
-            <button
-              class="nav-open-btn"
-              aria-label="open menu"
-              data-nav-toggler
-            >
-              <i class="fa-solid fa-bars"></i>
-            </button>
-
-            <a href="contact.html" class="btn">Start Now! </a>
-
-            <div class="overlay" data-nav-toggler data-overlay></div>
-          </div>
+          <div class="overlay" data-nav-toggler data-overlay></div>
         </div>
       </header>
 
@@ -155,8 +145,8 @@
 
       <!-- ------------------- Section Two ------------------- -->
 
-      <div class="left__card">
-        <div class="container">
+      <section class="places">
+        <div class="left__card">
           <div class="card__text">
             <h1>
               We change lives throughout leadership development. Where are you
@@ -172,13 +162,9 @@
             </p>
           </div>
         </div>
-      </div>
-
-      <section class="places">
         <div class="container">
-          <div class="places__content">
             <div class="article_image_part">
-              <div class="artice_part">
+
                 <p>
                   From our headquarters in Amman Jordan, to our office in Egypt,
                   we have been providing the aspiring Middle Eastern Youth with
@@ -191,9 +177,9 @@
                 </p>
               </div>
 
-              <div class="image__part">
+              <div class="image__part ">
                 <div class="image_slider">
-                  <div class="image_box">
+                  <div class="image_box swiper-slide">
                     <img
                       src="assets/images/home/austraila.png"
                       alt="Australia"
@@ -210,89 +196,78 @@
                     <img src="assets/images/home/Canada.png" alt="Canada" />
                     <h3 class="city">Canada</h3>
                   </div>
+
+                  <div class="image_box">
+                    <img src="assets/images/home/Canada.png" alt="Canada" />
+                    <h3 class="city">Canada</h3>
+                  </div>
                 </div>
               </div>
             </div>
+        </div>
+      </section>
+
+      <section class="container">
+        <div class="card__container swiper">
+          <div class="card__content">
+            <div class="swiper-wrapper">
+              <article class="card__article swiper-slide">
+                <div class="card__image">
+                  <img
+                    src="assets/img/avatar-1.png"
+                    alt="image"
+                    class="card__img"
+                  />
+                </div>
+              </article>
+
+              <article class="card__article swiper-slide">
+                <div class="card__image">
+                  <img
+                    src="assets/img/avatar-2.png"
+                    alt="image"
+                    class="card__img"
+                  />
+                  <div class="card__shadow"></div>
+                </div>
+              </article>
+
+              <article class="card__article swiper-slide">
+                <div class="card__image">
+                  <img
+                    src="assets/img/avatar-3.png"
+                    alt="image"
+                    class="card__img"
+                  />
+                  <div class="card__shadow"></div>
+                </div>
+              </article>
+
+              <article class="card__article swiper-slide">
+                <div class="card__image">
+                  <img
+                    src="assets/img/avatar-4.png"
+                    alt="image"
+                    class="card__img"
+                  />
+                  <div class="card__shadow"></div>
+                </div>
+              </article>
+
+              <article class="card__article swiper-slide">
+                <div class="card__image">
+                  <img
+                    src="assets/img/avatar-5.png"
+                    alt="image"
+                    class="card__img"
+                  />
+                  <div class="card__shadow"></div>
+                </div>
+              </article>
+            </div>
           </div>
-        </div>
-      </section>
 
-      <!-- ------------------- Home ------------------- -->
-      <section class="places">
-        <div class="container">
-          <h1>Section 3</h1>
-        </div>
-      </section>
-
-      <!-- ------------------- Home ------------------- -->
-      <section class="places">
-        <div class="container">
-          <h1>Section 4</h1>
-        </div>
-      </section>
-    </div>
-
-    <section class="container">
-      <div class="card__container swiper">
-        <div class="card__content">
-          <div class="swiper-wrapper">
-            <article class="card__article swiper-slide">
-              <div class="card__image">
-                <img
-                  src="assets/img/avatar-1.png"
-                  alt="image"
-                  class="card__img"
-                />
-              </div>
-            </article>
-
-            <article class="card__article swiper-slide">
-              <div class="card__image">
-                <img
-                  src="assets/img/avatar-2.png"
-                  alt="image"
-                  class="card__img"
-                />
-                <div class="card__shadow"></div>
-              </div>
-            </article>
-
-            <article class="card__article swiper-slide">
-              <div class="card__image">
-                <img
-                  src="assets/img/avatar-3.png"
-                  alt="image"
-                  class="card__img"
-                />
-                <div class="card__shadow"></div>
-              </div>
-            </article>
-
-            <article class="card__article swiper-slide">
-              <div class="card__image">
-                <img
-                  src="assets/img/avatar-4.png"
-                  alt="image"
-                  class="card__img"
-                />
-                <div class="card__shadow"></div>
-              </div>
-            </article>
-
-            <article class="card__article swiper-slide">
-              <div class="card__image">
-                <img
-                  src="assets/img/avatar-5.png"
-                  alt="image"
-                  class="card__img"
-                />
-                <div class="card__shadow"></div>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <!-- <div class="swiper-button-next">
+          <!-- <div class="swiper-button-next">
           <i class="ri-arrow-right-s-line"></i>
         </div>
 
@@ -300,10 +275,11 @@
           <i class="ri-arrow-left-s-line"></i>
         </div> -->
 
-        <!-- Pagination  -->
-        <!-- <div class="swiper-pagination"></div> -->
-      </div>
-    </section>
+          <!-- Pagination  -->
+          <!-- <div class="swiper-pagination"></div> -->
+        </div>
+      </section>
+    </div>
 
     <!-- Swiper Js -->
     <script src="assets/js/swiper-bundle.min.js"></script>
