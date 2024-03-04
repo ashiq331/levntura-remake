@@ -463,38 +463,6 @@ header .btn {
   }
 }
 
-/* 
-
-
-.header {
-  width: 100%;
-  height: 80px;
-  padding: 20px 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 999999;
-}
-
-.header__content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.nav__items {
-  display: flex;
-  list-style-type: none;
-  gap: 54px;
-}
-
-.nav__items li a {
-  color: white;
-  font-size: var(--link);
-  font-weight: normal;
-  text-align: center;
-} */
-
 .home {
   position: relative;
   width: 100%;
@@ -532,11 +500,79 @@ header .btn {
   width: 70%;
   background-color: #a5a5a5;
 }
-.btn_links {
-  margin-top: 1rem;
+
+
+
+ .btn-area {
+  width: 170px;
+  text-align: right;
   display: flex;
+}
+
+/* ---------- Animated Button -------------- */
+
+.btn-animation {
+  margin-top: 24px;
+  border: 2px solid var(--white);
+  padding: 10px 0px;
+  color: var(--white);
+  position: relative;
+  z-index: 2;
+  height: 70px;
+  width: 130px;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
+  cursor: pointer;
+  border-radius: 50px;
+  background-color: var(--black);
+  transition: .2s ease-in-out;
+}
+
+ .btn-animation .inner-arrow {
+  font-size: 20px;
+  color: var(--white);
+  z-index: 2;
+  margin: 0px -50px 0px 50px;
+  transition: .2s ease-in-out;
+}
+
+.btn-animation:hover .inner-arrow {
+  margin: unset;
+  color: var(--black) !important;
+  display: block;
+}
+
+ .btn-animation:hover {
+  background: var(--white);
+  width: 160px;
+}
+
+ .ab-btn {
+  color: var(--white);
+  z-index: 2;
+  margin: 0px -13px 0px 13px;
+  font-family: var(--ff-azeret-regular);
+}
+
+ .btn-animation:hover .ab-btn {
+  color: var(--black) !important;
+  margin: unset;
+}
+
+ .btn-animation span {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: var(--black);
+  transition: .2s linear;
+  border-radius: 50px;
+  z-index: 1;
+}
+
+ .btn-animation:hover span {
+  height: 0%;
+  width: 50%;
 }
 
 /*=============== CARD ===============*/
