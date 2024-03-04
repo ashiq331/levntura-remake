@@ -40,6 +40,7 @@
   --heading-color: #ffffff;
 
   --bg-one: #d8e6e6;
+  --grey-bg: #f5f6f7;
   --bg-two: #000037;
   --bg-three: #faf0e1;
   --bg-four: #ffd35c;
@@ -146,14 +147,11 @@ h6 {
   font-size: var(--fs-6);
 }
 
-
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
-
-
 
 .container {
   max-width: 1366px;
@@ -352,10 +350,8 @@ header .btn {
 
   header .btn {
     padding: 13px 36px;
-
   }
 
-  
   .nav-open-btn,
   .overlay,
   .navbar .wrapper {
@@ -458,7 +454,6 @@ header .btn {
 
 /* ---------------------------------Home Start -----------------------------*/
 
-
 .home {
   position: relative;
   width: 100%;
@@ -475,7 +470,7 @@ header .btn {
 }
 
 .home__content {
-  padding-top: 60vh;
+  padding-top: 50vh;
   position: relative;
   color: var(--white);
 }
@@ -559,12 +554,79 @@ header .btn {
   gap: 16px;
 }
 
-.links i{
+.links i {
   border: 1px solid var(--white);
   padding: 6px;
   border-radius: 50px;
   transition: all 0.3s ease;
   font-size: 15px;
+}
+
+/* --------------------------- Section Two ------------------------ */
+
+.places {
+  height: auto;
+  padding: 4rem 0;
+  background-color: var(--grey-bg);
+  width: 100%;
+  z-index: 5;
+  position: relative;
+
+}
+
+.left__card {
+  background-color: var(--white);
+  width: 693px;
+  height: 688px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: right;
+  margin-top: -10rem;
+  position: absolute;
+  z-index: 22;
+}
+
+.card__text {
+  width: 480px;
+  position: absolute;
+  right: 10%;
+  padding: 3rem;
+}
+
+.left__card h1 {
+  font-family: var(--gelion-bold);
+  font-size: var(--h2);
+  font-weight: 900;
+  line-height: 45px;
+  padding-bottom: 48px;
+}
+
+.left__card p {
+  width: 100%;
+  font-size: var(--p);
+  color: #0c0f11;
+  opacity: 0.5;
+}
+
+.top_card h1 {
+  font-family: var(--gelion-black);
+  font-size: var(--h2);
+  font-weight: 900;
+  line-height: 45px;
+}
+
+
+.article_image_part {
+  display: flex;
+  flex-direction: column;
+}
+
+.image_slider
+{
+  width: 100%;
+  display: flex;
+  z-index: 99;
 }
 
 /*=============== CARD ===============*/
