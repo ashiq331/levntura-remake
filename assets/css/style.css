@@ -146,9 +146,6 @@ h6 {
   font-size: var(--fs-6);
 }
 
-p {
-  font-size: var(--fs-5);
-}
 
 img {
   display: block;
@@ -156,12 +153,7 @@ img {
   height: auto;
 }
 
-.stroke_text {
-  -webkit-text-stroke: 1px rgba(247, 247, 247, 0.852);
-  -webkit-text-fill-color: transparent;
-  font-family: var(--gelion-bold);
-  font-size: 4rem;
-}
+
 
 .container {
   max-width: 1366px;
@@ -180,7 +172,7 @@ img {
   top: 0;
   left: 0;
   right: 0;
-  padding: 30px 20px;
+  padding: 20px 0;
   width: 100%;
   z-index: 999;
 }
@@ -198,11 +190,11 @@ img {
 }
 
 .header .logo img {
-  width: 164px;
+  width: 115px;
 }
 
 .header.scrolled .logo img {
-  width: 164px;
+  width: 115px;
   filter: grayscale(100%) brightness(0%);
 }
 
@@ -248,12 +240,12 @@ img {
 .nav-close-btn {
   transition: var(--transition-1);
   position: absolute;
-  top: 1.6rem;
+  top: 2rem;
   right: 1rem;
 }
 
 .nav-close-btn i {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .navbar-link {
@@ -302,7 +294,7 @@ header .btn {
 }
 
 .nav-open-btn i {
-  font-size: 25px;
+  font-size: 22px;
   color: white;
 }
 
@@ -338,13 +330,32 @@ header .btn {
   .header .logo img {
     width: 162px;
   }
-
   .header.scrolled {
     background-color: var(--white);
     transition: 0.5s ease;
     z-index: 200;
   }
 
+  .header.scrolled .btn {
+    background-color: var(--black);
+    color: white;
+  }
+
+  .header .btn img {
+    width: 19px;
+  }
+
+  .header.scrolled .btn img {
+    filter: grayscale(0%) brightness(100%);
+    color: #fff;
+  }
+
+  header .btn {
+    padding: 13px 36px;
+
+  }
+
+  
   .nav-open-btn,
   .overlay,
   .navbar .wrapper {
@@ -359,7 +370,7 @@ header .btn {
   .navbar .navbar-list {
     position: relative;
     display: flex;
-    gap: 50px;
+    gap: 40px;
   }
 
   .navbar .navbar-list .navbar-link {
@@ -386,7 +397,8 @@ header .btn {
 
 @media (min-width: 1340px) {
   .header {
-    padding: 25px;
+    padding: 20px 0;
+    position: fixed;
   }
 
   .header.scrolled .logo img {
@@ -444,7 +456,8 @@ header .btn {
   }
 }
 
-/* ---------------------------------Home Start */
+/* ---------------------------------Home Start -----------------------------*/
+
 
 .home {
   position: relative;
@@ -462,14 +475,20 @@ header .btn {
 }
 
 .home__content {
+  padding-top: 60vh;
   position: relative;
-  top: 60%;
-  left: 0;
   color: var(--white);
 }
 
+.stroke_text {
+  -webkit-text-stroke: 1px rgba(247, 247, 247, 0.852);
+  -webkit-text-fill-color: transparent;
+  font-family: var(--gelion-bold);
+  font-size: var(--h1);
+  line-height: 65px;
+}
+
 .home__top {
-  padding-top: 34rem;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
