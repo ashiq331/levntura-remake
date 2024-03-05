@@ -147,7 +147,7 @@ let programCards = new Swiper(".programs_card", {
     },
 
     1350: {
-      slidesPerView: 2.9,
+      slidesPerView: 4.5,
     },
   },
 });
