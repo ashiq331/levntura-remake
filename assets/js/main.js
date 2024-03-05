@@ -43,7 +43,7 @@ addEventOnElem(navbarLinks, "click", closeNavbar);
 /*=============== Slider ===============*/
 let swiperCards = new Swiper(".card__content", {
   loop: true,
-  spaceBetween: 32,
+  spaceBetween: 16,
   grabCursor: true,
 
   pagination: {
@@ -58,15 +58,40 @@ let swiperCards = new Swiper(".card__content", {
   },
 
   breakpoints: {
-    600: {
-      slidesPerView: 2,
+    400: {
+      slidesPerView: 1.2,
     },
+
+    600: {
+      slidesPerView: 1.6,
+    },
+
+    708: {
+      slidesPerView: 2.1,
+    },
+
+    808: {
+      slidesPerView: 2.1,
+    },
+
     968: {
-      slidesPerView: 3,
+      slidesPerView: 2.4,
     },
 
     1100: {
-      slidesPerView: 4,
+      slidesPerView: 2.7,
+    },
+
+    1160: {
+      slidesPerView: 2.7,
+    },
+
+    1250: {
+      slidesPerView: 2.9,
+    },
+
+    1350: {
+      slidesPerView: 2.9,
     },
   },
 });

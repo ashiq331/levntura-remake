@@ -52,7 +52,7 @@
     line-height: 32px !important;
   }
 
-  .stroke_text{
+  .stroke_text {
     line-height: 32px;
   }
 
@@ -72,4 +72,77 @@
   .btn-area {
     display: none;
   }
+}
+
+/* --------------------------- Section Two ------------------------ */
+@media screen and (max-width: 1200px) {
+  /* ------------ White Bg Card ------------------- */
+  .card__text {
+    width: 500px;
+    height: 693px;
+    background-color: var(--white);
+    padding: 3rem;
+    position: absolute;
+    top: -8rem;
+    z-index: -1;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  /* ------------ White Bg Card ------------------- */
+  .card__text {
+    width: 430px;
+    height: 693px;
+    background-color: var(--white);
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  /* ------------ White Bg Card ------------------- */
+  .card__text {
+    width: 90%;
+    height: 493px;
+    background-color: var(--white);
+    padding: 1rem;
+  }
+
+  .article_image_part {
+    height: min-content;
+    margin-top: 10rem;
+    align-items: start;
+    gap: 20px;
+    width: 100%;
+  }
+  .article_image_part p {
+    width: 90%;
+    order: 2;
+  }
+  
+  .card__container {
+    order: 1;
+  }
+  
+}
+
+
+@media screen and (max-width: 550px) {
+  /* ------------ White Bg Card ------------------- */
+
+  .article_image_part {
+    height: min-content;
+    margin-top: 13rem;
+    align-items: start;
+    gap: 20px;
+    width: 100%;
+  }
+  .article_image_part p {
+    width: 90%;
+    order: 2;
+  }
+  
+  .card__container {
+    order: 1;
+  }
+  
 }
