@@ -1017,24 +1017,20 @@ header .btn {
   color: #2d0505;
 }
 
-
 /* ----------------------------- Section Six ----------------------------- */
 
-.knowledge
-{
+.knowledge {
   padding: 7rem 0;
   background-color: var(--bg-three);
 }
 
-.knowledge_heading
-{
+.knowledge_heading {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.knowledge_heading h1
-{
+.knowledge_heading h1 {
   font-size: var(--h1);
   font-family: var(--gelion-bold);
   width: 70%;
@@ -1042,28 +1038,24 @@ header .btn {
   line-height: 65px;
 }
 
-.knowledge_heading .small_title
-{
+.knowledge_heading .small_title {
   display: flex;
   flex-direction: column;
   gap: 3rem;
 }
 
-.knowledge_heading .small_title h4
-{
+.knowledge_heading .small_title h4 {
   font-size: var(--h4);
-  color: #FD9444;
+  color: #fd9444;
 }
 
-.knowledge_heading .small_title p
-{
+.knowledge_heading .small_title p {
   font-size: var(--link);
-  color: #2D0505;
+  color: #2d0505;
   width: 50%;
 }
 
-.knowledge_image_content
-{
+.knowledge_image_content {
   padding-top: rem;
   display: flex;
   align-items: center;
@@ -1071,28 +1063,25 @@ header .btn {
   gap: 5%;
 }
 
-.knowledge_image_content .image_box:nth-child(2n)
-{
+.knowledge_image_content .image_box:nth-child(2n) {
   margin-top: 14rem;
 }
 
-.knowledge_image_content .image_box img{
+.knowledge_image_content .image_box img {
   width: auto;
   height: 450px;
   object-fit: cover;
 }
 
-
-.knowledge_image_content .image_box h2{
+.knowledge_image_content .image_box h2 {
   font-size: var(--h2);
   font-family: var(--gelion-light);
-  color: #0C0F11;
+  color: #0c0f11;
   margin-top: 16px;
   width: 80%;
 }
 
-.blog_btn
-{
+.blog_btn {
   margin-top: 4rem;
   display: flex;
   align-items: center;
@@ -1104,4 +1093,42 @@ header .btn {
   padding: 12px 34px;
   font-size: var(--h6);
   font-family: var(--gelion-bold);
+}
+
+/* ----------------------------- Media Section ------------------------ */
+.media {
+  padding: 7rem 0;
+}
+
+.media_heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 70%;
+}
+
+.media_heading h1 {
+  font-size: var(--h1);
+  font-family: var(--gelion-bold);
+  width: 30%;
+  color: var(--bg-two);
+  line-height: 65px;
+}
+
+.media_heading h4 {
+  color: #2d0505;
+  font-size: var(--h4);
+  width: 40%;
+}
+
+.media__content
+{
+  margin-top: 3rem;
+}
+
+.media_card .media__image img{
+  height: auto;
+  width: 100%;
+  object-fit: cover;
 }
