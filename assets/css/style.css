@@ -1132,3 +1132,57 @@ header .btn {
   width: 100%;
   object-fit: cover;
 }
+
+/* ------------------------------ Section Eight --------------------------- */
+.campus
+{
+  padding-top: 7rem;
+  background-color: var(--bg-four);
+}
+
+.campus_heading 
+{
+  display: flex;
+  align-items: self-start;
+  justify-content: space-between;
+}
+
+.campus_heading .campus_heading_small,
+.campus_heading .campus_heading_large{
+  width: 50%;
+}
+
+.campus_heading .campus_heading_small h5
+{
+  font-size: var(--text);
+  font-family: var(--gelion-light);
+  color: #2D0505;
+}
+
+.campus_heading .campus_heading_large h1
+{
+  font-size: var(--h1);
+  font-family: var(--gelion-bold);
+  color: var(--bg-two);
+  line-height: 65px;
+  width: 90%;
+}
+
+.campus_heading .campus_heading_large p{
+  padding-top: 2rem;
+  width: 68%;
+  color: #2D0505;
+  font-size: var(--link);
+
+}
+
+.campus_image
+{
+  margin-top: 2rem;
+  height: 850px;
+  background-image: url("/assets/images/home/campus_bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
