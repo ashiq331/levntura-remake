@@ -1,4 +1,4 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 660px) {
   :root {
     --h1: 36px;
     --h2: 34px;
@@ -37,7 +37,7 @@
   }
 
   .home__content {
-    padding-top: 55vh;
+    padding-top: 45vh;
   }
 
   .home__top {
@@ -95,6 +95,7 @@
     margin: 0 auto;
     padding: 0px 60px;
   }
+
   /* ------------ White Bg Card ------------------- */
   .card__text {
     width: 430px;
@@ -147,25 +148,5 @@
 
   .card__container {
     order: 1;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .swiper-button-next,
-  .swiper-button-prev {
-    display: block;
-  }
-}
-
-@media screen and (min-width: 1120px) {
-  .card__container {
-    max-width: 100%;
-  }
-
-  .swiper-button-prev {
-    left: -1rem;
-  }
-  .swiper-button-next {
-    right: -1rem;
   }
 }
