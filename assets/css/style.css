@@ -154,9 +154,9 @@ img {
 }
 
 .container {
-  max-width: 1366px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 0px 20px;
+  padding: 0px 220px;
 }
 
 /*--------------------------- HEADER ----------------------------------*/
@@ -633,13 +633,13 @@ header .btn {
   margin-bottom: 3rem;
 }
 
-/*=============== CARD ===============*/
+/*------------- Slider  -------------- */
+
 .card__container {
   width: 100%;
 }
 
 .card__content {
-  margin-inline: rem;
   overflow: hidden;
   width: 100%;
 }
@@ -647,6 +647,16 @@ header .btn {
 .card__image {
   height: 300px;
   display: flex;
+  position: relative;
+}
+
+.card__image .city_name {
+  position: absolute;
+  bottom: 1.2rem;
+  left: 1.2rem;
+  color: var(--white);
+  font-size: var(--h3);
+  font-family: var(--gelion-regular);
 }
 
 .card__image img {
@@ -687,31 +697,113 @@ header .btn {
   background-color: var(--second-color);
 }
 
-/*=============== BREAKPOINTS ===============*/
+/* --------------------------- Section Three ------------------------ */
 
-/* For medium devices */
-@media screen and (min-width: 768px) {
-  
-
-  .swiper-button-next,
-  .swiper-button-prev {
-    display: block;
-  }
+.programs {
+  padding: 7rem 0;
+  background-color: var(--bg-one);
+  width: 100%;
+  position: relative;
 }
 
-/* For large devices */
-@media screen and (min-width: 1120px) {
-  .card__container {
-    max-width: 100%;
-  }
+.small__heading {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
 
-  .swiper-button-prev {
-    left: -1rem;
-  }
-  .swiper-button-next {
-    right: -1rem;
-  }
+.title {
+  font-size: var(--link);
+  position: absolute;
+  left: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.main_heading {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  gap: 20rem;
+}
+
+.main_heading h1 {
+  font-size: var(--h1);
+}
+
+.card__container {
+  margin-top: 2rem;
+}
+
+.program_card__image {
+  height: 500px;
+  display: flex;
+  position: relative;
+}
+
+.program_card__image .city_name {
+  position: absolute;
+  bottom: 1.2rem;
+  left: 1.2rem;
+  color: var(--white);
+  font-size: var(--h3);
+  font-family: var(--gelion-regular);
+}
+
+.program_card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* --------------------------- About US ------------------------ */
+.about 
+{
+  padding: 7rem 0;
+}
+
+.about_title h1
+{
+  font-family: var(--gelion-bold);
+  font-size: var(--h1);
+  font-weight: 900;
+  line-height: 65px;
+  color: var(--bg-two);
+}
+
+.about__bottom
+{
+  width: 100%;
+  display: flex;
+  align-items: self-start;
+  justify-content: space-between;
+}
+
+.about__bottom .btn_links
+{
+  width: 30%;
+  color: #002d2d;
+}
+
+.about__bottom .btn_links .btn-area i 
+{
+  border: 1px solid var(--black);
 }
 
 
+.article
+{
+  display: flex;
+  gap: 24px;
+  width: 70%;
+  padding-top: 2rem;
+}
 
+.article p{
+  width: 50%;
+  font-size: var(--p);
+  font-family: var(--gelion-regular);
+  line-height: normal;
+}

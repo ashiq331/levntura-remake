@@ -75,6 +75,7 @@
 }
 
 /* --------------------------- Section Two ------------------------ */
+
 @media screen and (max-width: 1200px) {
   /* ------------ White Bg Card ------------------- */
   .card__text {
@@ -89,6 +90,11 @@
 }
 
 @media screen and (max-width: 880px) {
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0px 60px;
+  }
   /* ------------ White Bg Card ------------------- */
   .card__text {
     width: 430px;
@@ -118,13 +124,11 @@
     width: 90%;
     order: 2;
   }
-  
+
   .card__container {
     order: 1;
   }
-  
 }
-
 
 @media screen and (max-width: 550px) {
   /* ------------ White Bg Card ------------------- */
@@ -140,9 +144,28 @@
     width: 90%;
     order: 2;
   }
-  
+
   .card__container {
     order: 1;
   }
-  
+}
+
+@media screen and (min-width: 768px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .card__container {
+    max-width: 100%;
+  }
+
+  .swiper-button-prev {
+    left: -1rem;
+  }
+  .swiper-button-next {
+    right: -1rem;
+  }
 }
