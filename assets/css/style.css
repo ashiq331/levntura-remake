@@ -913,29 +913,30 @@ header .btn {
 /* ----------------------- Section Five ------------------------- */
 .venture {
   padding: 7rem 0;
-  position: relative;
 }
 
 .venture_heading {
   display: flex;
-  align-items: start;
+  align-items: center;
   justify-content: space-between;
 }
 
+.venture_heading .left_side,
+.venture_heading .right_side{
+  width: 50%;
+}
+
 .venture_heading h4 {
-  position: absolute;
-  left: 2rem;
   font-size: var(--h4);
   font-family: var(--gelion-light);
   color: var(--title-color);
 }
 
 .venture_heading p {
-  padding-top: 10rem;
-  padding-left: 3rem;
+  padding-top: 5rem;
   font-size: var(--link);
   font-family: var(--gelion-regular);
-  width: 25%;
+  width: 40%;
   color: #2d0505;
 }
 
@@ -943,7 +944,7 @@ header .btn {
   font-size: var(--h1);
   font-family: var(--gelion-bold);
   color: var(--bg-two);
-  width: 50%;
+  width: 80%;
   line-height: 65px;
 }
 
@@ -1187,7 +1188,122 @@ header .btn {
 }
 
 
+/* --------------------------- Section Nine --------------------- */
+.testimonial
+{
+  height: 986px;
+  width: 100%;
+  background-color: var(--dark-bg);
+  color: var(--white);
+  padding: 0 2rem;
+  overflow: hidden;
+}
 
+.testimonial_content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.testimonial_content .left_content
+{
+  width: 50%;
+  padding-top: 6rem;
+}
+
+.testimonial_content .left_content h4{
+  font-size: var(--h4);
+  font-family: var(--gelion-light);
+  color: #FC535C;
+  
+}
+
+.testimonial_content .left_content h1{
+  font-size: var(--h1);
+  font-family: var(--gelion-bold);
+  color: var(--white);
+  line-height: 65px;
+  margin-top: 1rem;
+}
+
+.testimonial_content .left_content h1 .grey{
+  opacity: 20%;
+}
+
+.testimonial_content .left_content h1 .white{
+  opacity: 100%;
+  margin-left: 10rem;
+}
+
+.testimonial_content .right_content
+{
+  width: 50%;
+  height: 100%;
+}
+
+.testimonial_content .right_content .image__container{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.testimonial_content .right_content .image__container .feedback_box{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: -18rem;
+}
+
+.testimonial_content .right_content .image__container .feedback_box .blank-box
+{
+  height: 371px;
+  width: 316px;
+  background-color: var(--white);
+  opacity: 0.2;
+}
+
+.testimonial_content .right_content .image__container .feedback_box .feed_back
+{
+  padding: 1rem;
+  height: 371px;
+  width: 316px;
+  background-color: var(--white);
+  color: var(--black);
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  justify-content: space-between;
+}
+
+.testimonial_content .right_content .image__container .feedback_box .feed_back .quotes p{
+  font-family: var(--gelion-regular);
+  font-size: var(--h5);
+  line-height: 24px;
+}
+
+.student_details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.student_details .student_name{
+  font-size: var(--h6);
+  font-family: var(--gelion-regular);
+  color: #0C0F11;
+}
+
+.student_details .position{
+  font-size: var(--h6);
+  font-family: var(--gelion-regular);
+  color: #0C0F11;
+  opacity: 0.2;
+}
 
 /* --------------------------- Footer --------------------- */
 
