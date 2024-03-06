@@ -1292,9 +1292,13 @@ header .btn {
   gap: 2rem;
 }
 
-.counter_box{
-  background-color: #00003c36;
-  width: 25%;
+.counter_box
+{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  justify-content: center;
 }
 
 .counter_box .counter_top
@@ -1311,19 +1315,38 @@ header .btn {
   color: #7ABAFF;
 }
 
+.counter_box .counter_top .yellow{
+  color: var(--yellow);
+}
+
+.counter_box .counter_top .green{
+  color: var(--green);
+}
+
+
+.counter_box .counter_top h6
+{
+  font-family: var(--gelion-medium);
+  font-size: var(--text);
+  color: #0C0F11;
+
+}
+
 .counter_box .counter_down p
 {
   font-size: var(--link);
   font-family: var(--gelion-regular);
   color: #000037;
-  width: 60%;
+  width: 80%;
 }
 
 .liner
 {
-  background-color: red;
-  height: 60px;
-  width: 3px;
+
+  background-color: #000037;
+  margin-right: 6rem;
+  height: 90px;
+  width: 1px;
 }
 
 
