@@ -922,7 +922,7 @@ header .btn {
 }
 
 .venture_heading .left_side,
-.venture_heading .right_side{
+.venture_heading .right_side {
   width: 50%;
 }
 
@@ -1123,45 +1123,40 @@ header .btn {
   width: 40%;
 }
 
-.media__content
-{
+.media__content {
   margin-top: 3rem;
 }
 
-.media_card .media__image img{
+.media_card .media__image img {
   height: auto;
   width: 100%;
   object-fit: cover;
 }
 
 /* ------------------------------ Section Eight --------------------------- */
-.campus
-{
+.campus {
   padding-top: 7rem;
   background-color: var(--bg-four);
 }
 
-.campus_heading 
-{
+.campus_heading {
   display: flex;
   align-items: self-start;
   justify-content: space-between;
 }
 
 .campus_heading .campus_heading_small,
-.campus_heading .campus_heading_large{
+.campus_heading .campus_heading_large {
   width: 50%;
 }
 
-.campus_heading .campus_heading_small h5
-{
+.campus_heading .campus_heading_small h5 {
   font-size: var(--text);
   font-family: var(--gelion-light);
-  color: #2D0505;
+  color: #2d0505;
 }
 
-.campus_heading .campus_heading_large h1
-{
+.campus_heading .campus_heading_large h1 {
   font-size: var(--h1);
   font-family: var(--gelion-bold);
   color: var(--bg-two);
@@ -1169,16 +1164,14 @@ header .btn {
   width: 90%;
 }
 
-.campus_heading .campus_heading_large p{
+.campus_heading .campus_heading_large p {
   padding-top: 2rem;
   width: 68%;
-  color: #2D0505;
+  color: #2d0505;
   font-size: var(--link);
-
 }
 
-.campus_image
-{
+.campus_image {
   margin-top: 2rem;
   height: 850px;
   background-image: url("/assets/images/home/campus_bg.png");
@@ -1187,10 +1180,104 @@ header .btn {
   background-size: cover;
 }
 
+/* --------------------------- Section nine --------------------- */
+.share {
+  padding: 7rem 1rem;
+}
 
-/* --------------------------- Section Nine --------------------- */
-.testimonial
-{
+.share_heading h1 {
+  font-size: var(--h1);
+  font-family: var(--gelion-bold);
+  width: 34%;
+  text-transform: uppercase;
+  color: var(--bg-two);
+  line-height: 65px;
+}
+
+.share_images {
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.share_images .left_part,
+.share_images .right_part {
+  width: 50%;
+}
+
+.share_images .left_part {
+  height: 664px;
+  width: auto;
+}
+
+.share_images .left_part img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.right_part {
+  display: flex;
+  align-items: self-start;
+  position: relative;
+}
+
+.right_part .middle_part{
+  margin-bottom: 8rem;
+}
+
+.right_part .middle_part .img_part {
+  margin-bottom: 1rem;
+  width: 40%;
+  height: 482px;
+}
+
+
+.middle_part .heading_btn_part{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 2rem;
+}
+
+.middle_part .heading_btn_part h2{
+  font-size: var(--h2);
+  font-family: var(--gelion-semibold);
+  line-height: 34px;
+  width: 100%;
+}
+
+.middle_part .heading_btn_part p{
+  font-size: var(--link);
+  font-family: var(--gelion-regular);
+  line-height: 16px;
+  color: #2D0505;
+  width: 60%;
+}
+
+.middle_part .heading_btn_part a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--h6);
+  font-family: var(--gelion-black);
+  text-transform: uppercase;
+  width: 137px;
+  height: 42px;
+  border: 1px solid var(--black);
+}
+
+.right_part .left-part {
+  position: absolute;
+  width: 40%;
+  height: 376px;
+  right: 3rem;
+  top: 8rem;
+}
+/* --------------------------- Section Ten --------------------- */
+.testimonial {
   height: 986px;
   width: 100%;
   background-color: var(--dark-bg);
@@ -1206,20 +1293,18 @@ header .btn {
   gap: 1rem;
 }
 
-.testimonial_content .left_content
-{
+.testimonial_content .left_content {
   width: 50%;
   padding-top: 6rem;
 }
 
-.testimonial_content .left_content h4{
+.testimonial_content .left_content h4 {
   font-size: var(--h4);
   font-family: var(--gelion-light);
-  color: #FC535C;
-  
+  color: #fc535c;
 }
 
-.testimonial_content .left_content h1{
+.testimonial_content .left_content h1 {
   font-size: var(--h1);
   font-family: var(--gelion-bold);
   color: var(--white);
@@ -1227,29 +1312,28 @@ header .btn {
   margin-top: 1rem;
 }
 
-.testimonial_content .left_content h1 .grey{
+.testimonial_content .left_content h1 .grey {
   opacity: 20%;
 }
 
-.testimonial_content .left_content h1 .white{
+.testimonial_content .left_content h1 .white {
   opacity: 100%;
   margin-left: 10rem;
 }
 
-.testimonial_content .right_content
-{
+.testimonial_content .right_content {
   width: 50%;
   height: 100%;
 }
 
-.testimonial_content .right_content .image__container{
+.testimonial_content .right_content .image__container {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   gap: 1rem;
 }
 
-.testimonial_content .right_content .image__container .feedback_box{
+.testimonial_content .right_content .image__container .feedback_box {
   display: flex;
   flex-direction: column;
   align-items: end;
@@ -1258,16 +1342,14 @@ header .btn {
   margin-top: -18rem;
 }
 
-.testimonial_content .right_content .image__container .feedback_box .blank-box
-{
+.testimonial_content .right_content .image__container .feedback_box .blank-box {
   height: 371px;
   width: 316px;
   background-color: var(--white);
   opacity: 0.2;
 }
 
-.testimonial_content .right_content .image__container .feedback_box .feed_back
-{
+.testimonial_content .right_content .image__container .feedback_box .feed_back {
   padding: 1rem;
   height: 371px;
   width: 316px;
@@ -1279,7 +1361,13 @@ header .btn {
   justify-content: space-between;
 }
 
-.testimonial_content .right_content .image__container .feedback_box .feed_back .quotes p{
+.testimonial_content
+  .right_content
+  .image__container
+  .feedback_box
+  .feed_back
+  .quotes
+  p {
   font-family: var(--gelion-regular);
   font-size: var(--h5);
   line-height: 24px;
@@ -1292,23 +1380,22 @@ header .btn {
   gap: 12px;
 }
 
-.student_details .student_name{
+.student_details .student_name {
   font-size: var(--h6);
   font-family: var(--gelion-regular);
-  color: #0C0F11;
+  color: #0c0f11;
 }
 
-.student_details .position{
+.student_details .position {
   font-size: var(--h6);
   font-family: var(--gelion-regular);
-  color: #0C0F11;
+  color: #0c0f11;
   opacity: 0.2;
 }
 
 /* --------------------------- Footer --------------------- */
 
-.footer
-{
+.footer {
   padding: 2.5rem 0;
   height: 570px;
   width: 100%;
@@ -1316,8 +1403,7 @@ header .btn {
   position: relative;
 }
 
-.footer_content
-{
+.footer_content {
   display: flex;
   align-items: self-start;
   justify-content: space-between;
@@ -1327,8 +1413,7 @@ header .btn {
   color: var(--white);
 }
 
-.footer_content .short_links
-{
+.footer_content .short_links {
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -1337,25 +1422,21 @@ header .btn {
 
 .footer_content .short_links a {
   font-size: var(--h5);
-
 }
 
-.footer_content .service_items 
-{
+.footer_content .service_items {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
-.footer_content .service_items h3
-{
+.footer_content .service_items h3 {
   font-size: var(--h3);
   font-family: var(--gelion-light);
 }
 
 .footer_content .contact_info,
-.footer_content .contact_info .address
-{
+.footer_content .contact_info .address {
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -1372,11 +1453,10 @@ header .btn {
   width: 45px;
 }
 
-.footer_content .social_links
-{
+.footer_content .social_links {
   margin-top: 20px;
 }
-.footer .bottom_logo{
+.footer .bottom_logo {
   position: absolute;
   bottom: 0;
   width: 100%;
