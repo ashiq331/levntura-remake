@@ -1230,7 +1230,7 @@ header .btn {
 
 .right_part .middle_part .img_part {
   margin-bottom: 1rem;
-  width: 40%;
+  width: 33%;
   height: 482px;
 }
 
@@ -1276,6 +1276,57 @@ header .btn {
   right: 3rem;
   top: 8rem;
 }
+
+
+
+/* --------------------------- Counter Section --------------------- */
+.counter{
+ padding-bottom: 7rem;
+}
+
+.counter_content
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.counter_box{
+  background-color: #00003c36;
+  width: 25%;
+}
+
+.counter_box .counter_top
+{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.counter_box .counter_top h1
+{
+  font-size: var(--h1);
+  font-family: var(--gelion-black);
+  color: #7ABAFF;
+}
+
+.counter_box .counter_down p
+{
+  font-size: var(--link);
+  font-family: var(--gelion-regular);
+  color: #000037;
+  width: 60%;
+}
+
+.liner
+{
+  background-color: red;
+  height: 60px;
+  width: 3px;
+}
+
+
 /* --------------------------- Section Ten --------------------- */
 .testimonial {
   height: 986px;
