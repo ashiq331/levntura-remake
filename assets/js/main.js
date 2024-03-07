@@ -229,6 +229,10 @@ let mediaCards = new Swiper(".media_card", {
   },
 
   breakpoints: {
+    300: {
+      slidesPerView: 1.2,
+    },
+
     400: {
       slidesPerView: 1.2,
     },
@@ -291,6 +295,69 @@ let knowledgeCards = new Swiper(".knowledge_image_content", {
 
     600: {
       slidesPerView: 1.6,
+    },
+
+    708: {
+      slidesPerView: 2.1,
+    },
+
+    808: {
+      slidesPerView: 2.1,
+    },
+
+    968: {
+      slidesPerView: 2.4,
+    },
+
+    1100: {
+      slidesPerView: 2.7,
+    },
+
+    1160: {
+      slidesPerView: 2.7,
+    },
+
+    1250: {
+      slidesPerView: 2.9,
+    },
+
+    1350: {
+      slidesPerView: 4.5,
+    },
+  },
+});
+
+
+
+/*=============== Slider ===============*/
+let reviewCards = new Swiper(".review_card", {
+  loop: true,
+  spaceBetween: 16,
+  grabCursor: true,
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  breakpoints: {
+    400: {
+      slidesPerView: 1.3,
+    },
+
+    500: {
+      slidesPerView: 1.6,
+    },
+
+
+    600: {
+      slidesPerView: 1.8,
     },
 
     708: {

@@ -677,7 +677,6 @@ header .btn {
   object-fit: cover;
 }
 
-
 /* --------------------------- Section Three ------------------------ */
 
 .programs {
@@ -703,7 +702,7 @@ header .btn {
   color: #002d2d;
 }
 
-.title_part{
+.title_part {
   display: flex;
   flex-direction: column;
   align-items: self-start;
@@ -814,7 +813,6 @@ header .btn {
   padding: 10px;
   border-radius: 50px;
 }
-
 
 .article {
   display: flex;
@@ -942,7 +940,7 @@ header .btn {
   justify-content: space-between;
 }
 
-.venture_heading .left_side{
+.venture_heading .left_side {
   width: 40%;
 }
 
@@ -972,7 +970,7 @@ header .btn {
   line-height: 65px;
 }
 
-.pc_visible{
+.pc_visible {
   display: none;
 }
 
@@ -1048,7 +1046,6 @@ header .btn {
 
 /* ----------------------------- Section Six ----------------------------- */
 
-
 .knowledge {
   padding: 7rem 0;
   background-color: var(--bg-three);
@@ -1068,7 +1065,7 @@ header .btn {
   line-height: 65px;
 }
 
-.for_mobile_version{
+.for_mobile_version {
   display: none;
 }
 
@@ -1089,7 +1086,7 @@ header .btn {
   width: 50%;
 }
 
-.pc_hidden{
+.pc_hidden {
   display: none;
 }
 
@@ -1272,21 +1269,24 @@ header .btn {
   height: 482px;
 }
 
-.middle_part .heading_btn_part {
+.middle_part .heading_btn_part,
+.heading_btn_part {
   display: flex;
   flex-direction: column;
   gap: 24px;
   margin-top: 2rem;
 }
 
-.middle_part .heading_btn_part h2 {
+.middle_part .heading_btn_part h2,
+.heading_btn_part h2 {
   font-size: var(--h2);
   font-family: var(--gelion-semibold);
   line-height: 34px;
   width: 100%;
 }
 
-.middle_part .heading_btn_part p {
+.middle_part .heading_btn_part p,
+.heading_btn_part p {
   font-size: var(--link);
   font-family: var(--gelion-regular);
   line-height: 16px;
@@ -1294,7 +1294,8 @@ header .btn {
   width: 60%;
 }
 
-.middle_part .heading_btn_part a {
+.middle_part .heading_btn_part a,
+.heading_btn_part a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1314,6 +1315,10 @@ header .btn {
   top: 8rem;
 }
 
+.pc_hide {
+  display: none;
+}
+
 /* --------------------------- Counter Section --------------------- */
 .counter {
   padding-bottom: 7rem;
@@ -1323,27 +1328,27 @@ header .btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 2rem;
+  gap: 7rem;
 }
 
 .counter_box {
-  width: 20%;
   display: flex;
   flex-direction: column;
   align-items: self-start;
   justify-content: center;
+  width: 300px;
 }
 
 .counter_box .counter_top {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .counter_box .counter_top h1 {
-  font-size: var(--h1);
+  font-size: 74px;
   font-family: var(--gelion-black);
+
   color: #7abaff;
 }
 
@@ -1358,21 +1363,20 @@ header .btn {
 .counter_box .counter_top h6 {
   font-family: var(--gelion-medium);
   font-size: var(--text);
-  color: #0c0f11;
 }
 
 .counter_box .counter_down p {
   font-size: var(--link);
   font-family: var(--gelion-regular);
   color: #000037;
-  width: 80%;
+  width: 100%;
 }
 
 .liner {
   background-color: #000037;
-  margin-right: 6rem;
   height: 90px;
   width: 1px;
+  margin-left: 2rem;
 }
 
 /* --------------------------- Section Ten --------------------- */
