@@ -770,6 +770,11 @@
 }
 
 @media screen and (max-width: 450px) {
+
+  .home__content {
+    padding-top: 40vh;
+  }
+
   .article_image_part {
     margin-top: 16rem;
   }
