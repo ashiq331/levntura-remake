@@ -83,6 +83,10 @@ html {
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar{
+  display: none;
+}
+
 body {
   background-color: var(--white);
   color: var(--black);
@@ -167,6 +171,7 @@ img {
   padding-right: 1rem;
   overflow: hidden;
 }
+
 
 /*--------------------------- HEADER ----------------------------------*/
 
@@ -281,13 +286,15 @@ header .btn {
   padding: 13px 46px;
   border: 1px solid var(--white);
   color: var(--white);
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: var(--black);
 }
 
 .header .btn:hover {
-  color: rgba(0, 30, 255, 0.762);
-  border-color: #005eff;
-  mix-blend-mode: difference;
+  color: rebeccapurple;
+  border: 1px solid rebeccapurple;
 }
 
 .header .btn a {
@@ -330,7 +337,7 @@ header .btn {
   .header {
     padding: 20px 30px;
     position: fixed;
-    mix-blend-mode: exclusion;
+    mix-blend-mode: difference;
   }
 
   .header .logo img {
@@ -390,7 +397,7 @@ header .btn {
   .header {
     padding: 20px 30px;
     position: fixed;
-    mix-blend-mode: exclusion;
+    mix-blend-mode: difference;
   }
 
   .header .logo img {
