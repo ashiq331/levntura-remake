@@ -1105,6 +1105,15 @@ header .btn {
   width: auto;
   height: 450px;
   object-fit: cover;
+  transform: scale(1);
+  transition: -webkit-transform 300ms ease;
+  transition: transform 300ms ease;
+  transition: transform 300ms ease, -webkit-transform 300ms ease;
+}
+
+.knowledge_image_content .image_box img:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .knowledge_image_content .image_box h2 {

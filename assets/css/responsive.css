@@ -507,7 +507,7 @@
 
   .home-heading {
     order: 2;
-    margin-top: 32px;
+    font-size: 36px;
     line-height: 32px !important;
   }
 
@@ -517,15 +517,15 @@
   }
 
   .home__top .home-heading {
-    font-size: var(--h1);
+    font-size: 36px;
     font-family: var(--gelion-black);
     text-transform: uppercase;
-    line-height: 65px;
-    font-weight: 900;
+    line-height: 32px;
   }
 
   .home-context {
     order: 1;
+    margin-bottom: 2rem;
   }
 
   .home__down .liner {
@@ -546,6 +546,12 @@
     display: flex;
     align-items: center;
     gap: 1rem;
+  }
+
+  .left__card h1 {
+    font-size: 34px;
+    line-height: 45px;
+    padding-bottom: 18px;
   }
 
   .main_heading h1,
