@@ -1011,6 +1011,7 @@ header .btn {
   flex-direction: column;
   justify-content: space-between;
   gap: 1rem;
+
 }
 
 .venture_down .venture_details {
@@ -1041,6 +1042,7 @@ header .btn {
   width: 70%;
   color: #2d0505;
 }
+
 
 /* ----------------------------- Section Six ----------------------------- */
 

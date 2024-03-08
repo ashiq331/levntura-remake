@@ -454,7 +454,7 @@
 
 @media screen and (max-width: 660px) {
   :root {
-    --h1: 36px;
+    --h1: 48px;
     --h2: 34px;
     --h3: 24px;
     --h4: 20px;
@@ -467,7 +467,7 @@
 
   h1 {
     font-size: var(--fs-1);
-    line-height: normal;
+    line-height: 48px;
   }
 
   h2 {
@@ -803,6 +803,9 @@
     width: 100%;
   }
 
+  .venture_down {
+    margin-top: 6rem;
+  }
   /* -----------------------Counter Section ------------------- */
 
   .counter_box {
