@@ -155,7 +155,6 @@ let brandCards = new Swiper(".brand__content", {
   },
 });
 
-
 /*=============== Slider ===============*/
 let programCards = new Swiper(".programs_card", {
   loop: true,
@@ -271,7 +270,6 @@ let mediaCards = new Swiper(".media_card", {
   },
 });
 
-
 let knowledgeCards = new Swiper(".knowledge_image_content", {
   loop: true,
   spaceBetween: 16,
@@ -327,8 +325,6 @@ let knowledgeCards = new Swiper(".knowledge_image_content", {
   },
 });
 
-
-
 /*=============== Slider ===============*/
 let reviewCards = new Swiper(".review_card", {
   loop: true,
@@ -354,7 +350,6 @@ let reviewCards = new Swiper(".review_card", {
     500: {
       slidesPerView: 1.6,
     },
-
 
     600: {
       slidesPerView: 1.8,

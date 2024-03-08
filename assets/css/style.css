@@ -161,7 +161,7 @@ img {
 }
 
 .container {
-  max-width: 100%;
+  max-width: 1560px;
   margin: 0 auto;
   padding-left: 10rem;
   padding-right: 1rem;
@@ -180,7 +180,6 @@ img {
   left: 0;
   right: 0;
   padding: 20px 10px;
-  width: 100%;
   z-index: 999;
 }
 
