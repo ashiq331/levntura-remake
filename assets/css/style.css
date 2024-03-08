@@ -706,19 +706,21 @@ header .btn {
 
 .main_heading a {
   color: #002d2d;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: nowrap;
-  width: 300px;
+  width: 170px;
 }
 
 .main_heading a i {
   border: 1px solid #002d2d;
   padding: 10px;
   border-radius: 50px;
-  margin-left: 12px;
+  transition: all 0.3s ease;
+  margin-left: 5px;
 }
+
+.main_heading a:hover i {
+  margin-left: 17px;
+}
+
 
 .card__container {
   margin-top: 2rem;
@@ -800,7 +802,13 @@ header .btn {
   border: 1px solid var(--black);
   padding: 10px;
   border-radius: 50px;
+  transition: all 0.3s ease;
 }
+
+.about__bottom a:hover i {
+  margin-left: 17px;
+}
+
 
 .article {
   display: flex;
@@ -847,12 +855,19 @@ header .btn {
   justify-content: start;
   flex-wrap: nowrap;
   gap: 12px;
+  width: 170px;
+  transition: all 0.3s ease;
 }
 
 .work__heading__btn a i {
   border: 1px solid var(--white);
   padding: 10px;
   border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.work__heading__btn a:hover i {
+  margin-left: 17px;
 }
 
 .image_container {
