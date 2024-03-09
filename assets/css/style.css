@@ -1707,3 +1707,109 @@ header .btn {
   bottom: 0;
   width: 100%;
 }
+/* --------------------------------------- Home Page END ----------------------------------------------- */
+
+
+
+
+
+/* --------------------------------------- About Page Start ----------------------------------------------- */
+
+/* -------------------- About Page Hero Section ----------------------- */
+
+.about_hero{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about_hero_left{
+  width: 60%;
+  height: 100%;
+  background-color: var(--yellow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.about_left_content .about_small_title{
+  font-size: var(--link);
+  font-family: var(--gelion-regular);
+  text-transform: uppercase;
+  color: #FD9444;
+  padding-bottom: 24px;
+}
+
+.about_left_content .about_big_heading{
+  font-size: var(--h1);
+  font-family: var(--gelion-black);
+  line-height: 65px;
+  width: 60%;
+  color: #2D0505;
+  padding-bottom: 24px;
+}
+
+.orenged{
+  color: #FD9444;
+}
+
+.buttons{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.buttons .btn_one,
+.buttons .btn_two{
+  text-transform: uppercase;
+  font-family: var(--gelion-black);
+  padding: 10px 32px;
+  border:  1px solid black;
+
+}
+
+.about_article{
+  margin-top: 3rem;
+  opacity: 0.5;
+  font-size: var(--p);
+  line-height: 21px;
+  width: 60%;
+
+}
+
+.about_hero_right{
+  width: 40%;
+  background-color: var(--bg-three);
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+}
+
+.about_right_img{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 110%;
+  height: 456px;
+}
+
+.about_hero_right{
+  display: flex;
+  align-items: end;
+  justify-content: flex-start;
+  padding-left: 1rem;
+}
+
+.about_bottom_article{
+  margin-bottom: 6rem;
+  width: 60%;
+  opacity: 0.5;
+  font-size: var(--p);
+  line-height: 21px;
+  width: 60%;
+}
