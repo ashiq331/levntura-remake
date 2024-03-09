@@ -38,6 +38,7 @@
   --green: #89e0ba;
   --title-color: #fd9444;
   --heading-color: #ffffff;
+  --about-primary-color: #2D0505;
 
   --bg-one: #d8e6e6;
   --grey-bg: #f5f6f7;
@@ -1970,7 +1971,83 @@ line-height: 16px;
 
 
 
+/* ------------------------------- About Section Four ---------------------- */
+.about_venture{
+  padding: 7rem 0;
+  background-color: var(--bg-three);
+}
 
+.about_venture_content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: end;
+  gap: 3rem;
+}
+
+.venture_top_content{
+  display: flex;
+  align-items: self-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.venture_headings{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.venture_headings h1{
+  font-size: var(--h1);
+  font-family: var(--gelion-bold);
+  line-height: 65px;
+  color: var(--about-primary-color);
+  width: 40%;
+}
+
+.venture_headings h4{
+  font-size: var(--h4);
+  color: var(--title-color);
+  font-family: var(--gelion-regular);
+}
+
+.venture_images{
+  display: flex;
+  gap: 1rem;
+}
+
+.venture_card__image{
+  position: relative;
+  width: 316px;
+  height: 400px;
+}
+
+.venture_card__image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.venture_card__image .programe_name{
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  font-size: var(--h2);
+  font-family: var(--gelion-light);
+  color: var(--white);
+}
+
+.venture_card__image p {
+  font-size: var(--link);
+  font-family: var(--gelion-regular);
+  color: var(--about-primary-color);
+  line-height: 16px;
+}
+
+.venture_card__image p:nth-child(2){
+  margin-top: 3rem;
+}
 
 
 
