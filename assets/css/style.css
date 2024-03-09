@@ -1891,3 +1891,79 @@ color: #FD9444;
 line-height: 16px;
   color: #2D0505;
 }
+
+/*  ----------------------- About Section Three ---------------------- */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.founder_img{
+  background-image: url("/assets/images/about/Founder.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  height: 759px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.founder_info{
+  width: 35%;
+  padding: 3rem;
+  display: flex;
+  text-align: start;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  color: var(--white);
+}
+
+.founder_info h2{
+  font-size: var(--h2);
+  font-family: var(--gelion-semibold);
+  padding-bottom: 1rem;
+
+}
+
+.founder_info h6{
+  font-family: var(--gelion-medium);
+  font-size: var(--text);
+}
+
+.founder_info .article{
+  width: 80%;
+  padding: 1.5rem 0;
+  font-style: 12px;
+  font-family: var(--gelion-regular);
+  line-height: 16px;
+  opacity: 0.8;
+}
+
+.founder_info .btn_three{
+  text-transform: uppercase;
+  font-family: var(--gelion-black);
+  padding: 10px 32px;
+  border: 1px solid rgb(255, 255, 255);
+  font-size: var(--h6);
+}
