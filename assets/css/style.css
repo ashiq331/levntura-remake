@@ -2047,8 +2047,8 @@ header .btn {
 /* ----------------------- About Section Five --------------------- */
 
 .world_wide {
-  padding-top: 2rem;
-  padding-bottom: 7rem;
+  padding-top: 5rem;
+  padding-bottom: 9rem;
   background-color: var(--bg-three);
 }
 .world_top_headings{
@@ -2078,6 +2078,8 @@ header .btn {
   align-items: center;
   justify-content: flex-end;
   position: relative;
+  gap: 2rem;
+  margin-bottom: 5rem;
 }
 
 .world-map .world-map_image{
@@ -2088,7 +2090,122 @@ header .btn {
 
 .world-map .map_article{
   width: 30%;
+  font-size: var(--link);
+  font-family: var(--gelion-regular);
+  color: var(--about-primary-color);
+  line-height: 16px;
 }
+
+.country{
+  position: absolute;
+  left: 10rem;
+  bottom: -4.5rem;
+}
+
+.country .country_top{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.country .country_top h1{
+  font-size: var(--h1);
+  font-family: var(--gelion-bold);
+  line-height: 65px;
+  color: var(--title-color);
+}
+
+.country .country_top h6{
+  font-size: var(--text);
+  font-family: var(--gelion-medium);
+  color: #2D0505;
+
+}
+
+
+.country .country_down p{
+  padding-top: 1rem;
+  width: 30%;
+  font-size: var(--link);
+  font-family: var(--gelion-regular);
+  color: var(--about-primary-color);
+  line-height: 16px;
+}
+
+
+
+
+/* -------------------------------------- Image Container / Section Seven------------------------- */
+
+.tour_images{
+  background-color: var(--bg-three);
+}
+
+.images-content .row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+
+.column {
+  -ms-flex: 33%; /* IE10 */
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+/* ----------------------- About Section Seven / Gardinets Image --------------------- */
+
+.gardinets_image{
+  height: 700px;
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: -43rem;
+}
+
+.gardients{
+  position: absolute;
+  width: 100%;
+}
+
+
+/* ----------------------- About Section Eight / All Image --------------------- */
+.all_images{
+  padding: 7rem 0;
+  background: var(--bg-three);
+  margin-top: -2rem;
+}
+
 
 
 
