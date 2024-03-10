@@ -2340,7 +2340,7 @@ header .btn {
   font-size: var(--h1);
   color: var(--white);
   line-height: 65px;
-  width: 50%;
+  width: 65%;
 }
 
 .contact_social_link {
@@ -2400,8 +2400,8 @@ header .btn {
   z-index: 9;
 }
 
-
-.contact_right_bottom h2 {
+.contact_right_bottom h2,
+.form_right .form_right_container h2 {
   font-size: var(--h2);
   font-family: var(--gelion-light);
   line-height: 34px;
@@ -2409,18 +2409,24 @@ header .btn {
   padding-bottom: 1.6rem;
 }
 
-.contact_right_bottom form {
+.contact_right_bottom form,
+.form_right .form_right_container form {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-.contact_right_bottom form input {
+.contact_right_bottom form input,
+.form_right .form_right_container input {
   border: 1px solid #70707019;
   padding: 12px 1rem;
   outline: none;
   font-size: var(--h6);
   font-family: var(--gelion-regular);
+}
+
+.form_right .form_right_container input {
+  border: 1px solid white;
 }
 
 input[type="text"]::placeholder,
@@ -2430,7 +2436,10 @@ input[type="number"]::placeholder {
   font-family: var(--gelion-regular);
   color: #0c0f11;
 }
-.contact_right_bottom .submit_btn {
+
+.contact_right_bottom .submit_btn,
+.form_right .form_right_container .submit_btn
+ {
   margin-top: 5px;
   border: 1px solid #707070;
   font-size: var(--h6);
@@ -2460,38 +2469,38 @@ input[type="number"]::placeholder {
   position: relative;
 }
 
-.location_content{
+.location_content {
   display: flex;
   flex-direction: column;
   gap: 7rem;
 }
 
-.location_top p{
+.location_top p {
   font-size: var(--p);
   font-family: var(--gelion-regular);
   line-height: 21px;
   opacity: 0.5;
-  color: #5862ED;
+  color: #5862ed;
   width: 35%;
 }
 
-.location_bottom{
+.location_bottom {
   display: flex;
   align-items: center;
   justify-content: start;
   gap: 15%;
 }
 
-.location_bottom h1{
+.location_bottom h1 {
   font-size: var(--h1);
   font-family: var(--gelion-black);
-  color: #0C0F11;
+  color: #0c0f11;
   line-height: 65px;
 }
 
-.location_bottom address{
+.location_bottom address {
   opacity: 0.5;
-  color: #0C0F11;
+  color: #0c0f11;
   padding-top: 14px;
   padding-bottom: 10px;
   font-size: var(--h6);
@@ -2499,22 +2508,154 @@ input[type="number"]::placeholder {
   width: 75%;
 }
 
-.location_bottom p{
+.location_bottom p {
   opacity: 0.5;
-  color: #0C0F11;
+  color: #0c0f11;
   font-size: var(--h6);
   font-family: var(--gelion-regular);
 }
 
-.location_bottom h6{
+.location_bottom h6 {
   font-size: var(--h6);
   font-family: var(--gelion-black);
   padding-top: 1rem;
 }
 
-.location_bottom .socials{
+.location_bottom .socials {
   margin-top: 1.2rem;
   display: flex;
   gap: 2rem;
   font-size: 18px;
+}
+
+.contact_footer {
+  background-color: #7abaff;
+}
+
+/* --------------------------------------- Contact Page END ----------------------------------------------- */
+
+/* --------------------------------------- Gallery Page Start ----------------------------------------------- */
+.red {
+  color: #fc535c;
+}
+
+.gallery_section {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery_hedings {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.gallery_hedings h1 {
+  font-size: var(--h1);
+  font-family: var(--gelion-black);
+  line-height: 65px;
+  color: #2d0505;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.gallery_hedings p {
+  color: #0c0f11;
+  opacity: 0.5;
+  font-size: var(--p);
+  font-family: var(--gelion-regular);
+  line-height: 21px;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.gallery_images{
+  padding-bottom: 7rem;
+}
+
+.column {
+  -ms-flex: 25%; 
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 5px;
+}
+
+.column img {
+  margin-top: 16px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/*  ----------------------- Gallery Contact Form ---------------------- */
+.gallery_contact_form{
+  background-image: url("/assets/images/gallery/Mask\ Group\ 2660.png");
+  height: 733px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery_form_content{
+  display: flex;
+  align-items: center;
+}
+
+.gallery_form_content .form_left,
+.gallery_form_content .form_right
+{
+  width: 50%;
+}
+
+.gallery_form_content .form_right
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.gallery_form_content .form_left h1{
+  font-family: var(--gelion-black);
+  font-size: var(--h1);
+  line-height: 65px;
+  width: 50%;
+}
+
+.form_right .form_right_container{
+  background-color: #F5F6F7;
+  padding: 1.3rem;
+  height: 608px;
+  width: 396px;
+}
+
+
+
+.gallery_footer{
+  background-color: #fc535c;
 }
