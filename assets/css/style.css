@@ -1900,8 +1900,7 @@ header .btn {
 
 .swiper-slide {
   text-align: center;
-  font-size: 18px;
-  background: #fff;
+  background: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1965,7 +1964,7 @@ header .btn {
 }
 
 /* ------------------------------- About Section Four ---------------------- */
-.about_venture{
+.about_venture {
   padding: 7rem 0;
   background-color: var(--bg-three);
 }
@@ -2042,8 +2041,6 @@ header .btn {
   margin-top: 3rem;
 }
 
-
-
 /* ----------------------- About Section Five --------------------- */
 
 .world_wide {
@@ -2051,20 +2048,20 @@ header .btn {
   padding-bottom: 9rem;
   background-color: var(--bg-three);
 }
-.world_top_headings{
+.world_top_headings {
   display: flex;
   width: 100%;
   align-items: flex-start;
   justify-content: space-between;
 }
 
-.world_top_headings h4{
+.world_top_headings h4 {
   font-size: var(--h4);
   font-family: var(--gelion-regular);
   color: var(--title-color);
 }
 
-.world_top_headings h1{
+.world_top_headings h1 {
   font-size: var(--h1);
   font-family: var(--gelion-bold);
   line-height: 65px;
@@ -2073,7 +2070,7 @@ header .btn {
   z-index: 10;
 }
 
-.world-map{
+.world-map {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -2082,13 +2079,13 @@ header .btn {
   margin-bottom: 5rem;
 }
 
-.world-map .world-map_image{
+.world-map .world-map_image {
   width: 70%;
   margin-top: -10rem;
   z-index: 1;
 }
 
-.world-map .map_article{
+.world-map .map_article {
   width: 30%;
   font-size: var(--link);
   font-family: var(--gelion-regular);
@@ -2096,34 +2093,32 @@ header .btn {
   line-height: 16px;
 }
 
-.country{
+.country {
   position: absolute;
   left: 10rem;
   bottom: -4.5rem;
 }
 
-.country .country_top{
+.country .country_top {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-.country .country_top h1{
+.country .country_top h1 {
   font-size: var(--h1);
-  font-family: var(--gelion-bold);
+  font-family: var(--gelion-black);
   line-height: 65px;
   color: var(--title-color);
 }
 
-.country .country_top h6{
+.country .country_top h6 {
   font-size: var(--text);
   font-family: var(--gelion-medium);
-  color: #2D0505;
-
+  color: #2d0505;
 }
 
-
-.country .country_down p{
+.country .country_down p {
   padding-top: 1rem;
   width: 30%;
   font-size: var(--link);
@@ -2132,12 +2127,9 @@ header .btn {
   line-height: 16px;
 }
 
-
-
-
 /* -------------------------------------- Image Container / Section Seven------------------------- */
 
-.tour_images{
+.tour_images {
   background-color: var(--bg-three);
 }
 
@@ -2148,7 +2140,6 @@ header .btn {
   flex-wrap: wrap;
   padding: 0 4px;
 }
-
 
 .column {
   -ms-flex: 33%; /* IE10 */
@@ -2162,7 +2153,6 @@ header .btn {
   vertical-align: middle;
   width: 100%;
 }
-
 
 @media screen and (max-width: 800px) {
   .column {
@@ -2180,10 +2170,9 @@ header .btn {
   }
 }
 
-
 /* ----------------------- About Section Seven / Gardinets Image --------------------- */
 
-.gardinets_image{
+.gardinets_image {
   height: 700px;
   padding: 2rem 0;
   display: flex;
@@ -2193,14 +2182,13 @@ header .btn {
   margin-top: -43rem;
 }
 
-.gardients{
+.gardients {
   position: absolute;
   width: 100%;
 }
 
-
 /* ----------------------- About Section Eight / All Image --------------------- */
-.all_images{
+.all_images {
   padding: 7rem 0;
   background: var(--bg-three);
   margin-top: -10rem;
@@ -2208,7 +2196,7 @@ header .btn {
   z-index: 99;
 }
 
-.images_content{
+.images_content {
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -2217,26 +2205,89 @@ header .btn {
   padding: 3rem 0;
 }
 
-.images_content .btn_one{
+.images_content .btn_one {
   width: 180px;
   padding: 16px 36px;
   text-align: center;
   margin: 0 auto;
 }
 
-.images_content .see_all_btn{
+.images_content .see_all_btn {
   width: 170px;
   margin: 0 auto;
   font-size: var(--p);
-  color: #0C0F11;
+  color: #0c0f11;
   font-family: var(--gelion-regular);
 }
 
-.images_content h1{
+.images_content h1 {
   font-size: var(--h1);
   font-family: var(--gelion-bold);
   line-height: 65px;
   color: var(--about-primary-color);
+}
+
+/* ----------------------- About More Section ----------------------  */
+.about_more {
+  background: var(--bg-three);
+  padding-bottom: 7rem;
+}
+.about_more-top .about_more-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about_more-content h2 {
+  font-size: var(--h2);
+  font-family: var(--gelion-light);
+  line-height: 45px;
+  width: 70%;
+}
+
+.about_more-content h1 {
+  font-size: var(--h1);
+  font-family: var(--gelion-black);
+  line-height: 65px;
+  color: var(--about-primary-color);
+  width: 70%;
+}
+
+.about_more_bottom {
+  margin-top: 4rem;
+}
+
+.about_bottom_content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.about_bottom_content .about_bottom-left,
+.about_bottom_content .about_bottom-right {
+  width: 50%;
+}
+
+.about_bottom_content .about_bottom-left p {
+  font-size: var(--link);
+  font-family: var(--gelion-regular);
+  line-height: 16px;
+  color: #2d0505;
+  width: 70%;
+  padding-bottom: 3rem;
+}
+
+.about_bottom_content .about_bottom-right {
+  display: flex;
+  text-align: end;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.about_bottom_content .about_bottom-right img {
+  height: 379px;
+  width: 487px;
 }
 
 /* ------------------------------------- About Footer ----------------------- */
