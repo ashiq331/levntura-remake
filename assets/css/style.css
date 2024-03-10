@@ -1638,7 +1638,7 @@ header .btn {
 
 .footer {
   padding: 2.5rem 0;
-  height: 570px;
+  height: 70vh;
   width: 100%;
   background-color: var(--footer-bg);
   position: relative;
@@ -1648,13 +1648,13 @@ header .btn {
   display: flex;
   align-items: self-start;
   justify-content: space-between;
-  flex-wrap: wrap;
   gap: 1rem;
   padding-right: 3rem;
   color: var(--white);
 }
 
 .footer_content .short_links {
+  width: 33%;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -1666,6 +1666,7 @@ header .btn {
 }
 
 .footer_content .service_items {
+  width: 33%;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -1674,6 +1675,11 @@ header .btn {
 .footer_content .service_items h3 {
   font-size: var(--h3);
   font-family: var(--gelion-light);
+}
+
+
+.footer_content .contact_info{
+  width: 33%;
 }
 
 .footer_content .contact_info,
@@ -1697,6 +1703,7 @@ header .btn {
 .footer_content .social_links {
   margin-top: 20px;
 }
+
 .footer .bottom_logo {
   position: absolute;
   bottom: 0;
