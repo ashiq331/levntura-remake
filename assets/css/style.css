@@ -2203,11 +2203,41 @@ header .btn {
 .all_images{
   padding: 7rem 0;
   background: var(--bg-three);
-  margin-top: -2rem;
+  margin-top: -10rem;
+  width: 100%;
+  z-index: 99;
 }
 
+.images_content{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1.4rem;
+  padding: 3rem 0;
+}
 
+.images_content .btn_one{
+  width: 180px;
+  padding: 16px 36px;
+  text-align: center;
+  margin: 0 auto;
+}
 
+.images_content .see_all_btn{
+  width: 170px;
+  margin: 0 auto;
+  font-size: var(--p);
+  color: #0C0F11;
+  font-family: var(--gelion-regular);
+}
+
+.images_content h1{
+  font-size: var(--h1);
+  font-family: var(--gelion-bold);
+  line-height: 65px;
+  color: var(--about-primary-color);
+}
 
 /* ------------------------------------- About Footer ----------------------- */
 .about_footer {
