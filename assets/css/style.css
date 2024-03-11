@@ -1723,7 +1723,7 @@ header .btn {
 }
 
 .about_hero_left {
-  min-width: 500px;
+  width: 60%;
   height: 100%;
   background-color: var(--yellow);
   display: flex;
@@ -1783,13 +1783,14 @@ header .btn {
   align-items: flex-end;
   justify-content: center;
   position: relative;
+
 }
 
 .about_right_img {
   position: absolute;
   right: 0;
   top: 0;
-  width: 893px;
+  width: 120%;
   height: auto;
 }
 
@@ -1808,11 +1809,10 @@ header .btn {
 
 .about_bottom_article {
   margin-bottom: 6rem;
-  width: 60%;
+  width: 80%;
   opacity: 0.5;
   font-size: var(--p);
   line-height: 21px;
-  width: 60%;
 }
 
 /* ----------------------- About Section Two ---------------------- */
@@ -1887,7 +1887,7 @@ header .btn {
 
 .education_details h6 {
   color: #2d0505;
-  font-family: var(--gelion-medium);
+  font-family: var(--gelion-light);
   font-size: var(--text);
 }
 .education_article p {
@@ -1922,9 +1922,9 @@ header .btn {
 .founder_img {
   background-image: url("/assets/images/about/Founder.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  height: 649px;
   background-position: center;
-  height: 759px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -1932,13 +1932,13 @@ header .btn {
 
 .founder_info {
   width: 35%;
-  padding: 3rem;
   display: flex;
   text-align: start;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   color: var(--white);
+
 }
 
 .founder_info h2 {
@@ -2548,6 +2548,7 @@ input[type="number"]::placeholder {
 }
 
 .gallery_hedings {
+  padding-top: 10rem;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -2578,21 +2579,21 @@ input[type="number"]::placeholder {
   padding-bottom: 7rem;
 }
 
-.column {
+.gallery_column {
   -ms-flex: 25%; 
   flex: 25%;
   max-width: 25%;
   padding: 0 5px;
 }
 
-.column img {
+.gallery_column img {
   margin-top: 16px;
   vertical-align: middle;
   width: 100%;
 }
 
 @media screen and (max-width: 800px) {
-  .column {
+  .gallery_column {
     -ms-flex: 50%;
     flex: 50%;
     max-width: 50%;
@@ -2600,7 +2601,7 @@ input[type="number"]::placeholder {
 }
 
 @media screen and (max-width: 600px) {
-  .column {
+  .gallery_column {
     -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;

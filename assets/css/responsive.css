@@ -194,6 +194,11 @@
     right: 3rem;
     bottom: 0;
   }
+
+  /* --------------------------------------- About Page Start ----------------------------------------------- */
+  .about_article {
+    width: 83%;
+  }
 }
 
 @media screen and (max-width: 1050px) {
@@ -212,6 +217,16 @@
   .testimonial_content .right_content .image__container .feedback_box {
     margin-top: -20rem;
   }
+
+/* ----------------------- About Section Two ---------------------- */
+.education_left p {
+  width: 80%;
+}
+
+.education_article p {
+  width: 90%;
+}
+
 }
 
 @media screen and (max-width: 880px) {
@@ -245,7 +260,8 @@
   .knowledge_heading h1,
   .media_heading h1,
   .campus_heading .campus_heading_large h1,
-  .share_heading h1 {
+  .share_heading h1,
+  .about_left_content .about_big_heading {
     font-size: 58px;
     text-transform: uppercase;
     line-height: 58px;
@@ -372,6 +388,16 @@
     width: 100%;
     margin-top: 2rem;
   }
+  /* -------------------- About Page Hero Section ----------------------- */
+  .about_bottom_article,
+  .about_article {
+    width: 95%;
+  }
+
+  .founder_info {
+    width: 55%;
+  }
+
 }
 
 @media screen and (max-width: 750px) {
@@ -547,6 +573,17 @@
     flex-direction: column;
     align-items: self-start;
     justify-content: space-between;
+  }
+
+  /* ----------------------- About Section Two ---------------------- */
+  
+.education {
+  padding-top: 2rem;
+  padding-bottom: 6rem;
+}
+
+  .education_content{
+    flex-direction: column;
   }
 }
 
@@ -872,6 +909,62 @@
     bottom: 2rem;
     width: 50%;
   }
+
+
+
+  /* -------------------- About Page Hero Section ----------------------- */ 
+
+  .about_hero{
+    position: relative;
+    height: 100%;
+  }
+
+  .about_left_content .about_big_heading{
+    font-size: 36px;
+    line-height: 32px;
+    width: 70%;
+  }
+
+  .about_hero{
+    flex-direction: column;
+  }
+
+  .about_hero_left{
+    width: 100%;
+    padding-top: 65%;
+    padding-bottom: 1rem;
+  }
+
+  .about_hero_right {
+    position: unset;
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+
+  .about_right_img{
+    width: 90%;
+  }
+
+  .about_bottom_article {
+    margin-bottom: 1rem;
+  }
+
+  .founder_img {
+    background-image: url("/assets/images/about/Mask\ Group\ 30.png");
+    height: 730px;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 2.1rem;
+  }
+
+  .founder_info{
+    width: 95%;
+  }
+
+  .founder_info .article{
+    width: 95%;
+  }
+  
 }
 
 @media screen and (max-width: 550px) {
@@ -978,5 +1071,22 @@
   .footer_content .contact_info p {
     margin: 0 auto;
     width: 65%;
+  }
+
+
+
+  /* --------------------------- About Section ----------------------- */
+  .buttons .btn_one,
+  .buttons .btn_two {
+    padding: 10px 24px;
+  }
+
+  .education_right_first,
+  .education_right_second{
+    flex-direction: column;
+  }
+  .details_container {
+    width: 90%;
+    margin: 0 auto;
   }
 }
