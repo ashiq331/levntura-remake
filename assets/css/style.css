@@ -1783,7 +1783,6 @@ header .btn {
   align-items: flex-end;
   justify-content: center;
   position: relative;
-
 }
 
 .about_right_img {
@@ -1938,7 +1937,6 @@ header .btn {
   align-items: flex-start;
   justify-content: flex-start;
   color: var(--white);
-
 }
 
 .founder_info h2 {
@@ -2438,8 +2436,7 @@ input[type="number"]::placeholder {
 }
 
 .contact_right_bottom .submit_btn,
-.form_right .form_right_container .submit_btn
- {
+.form_right .form_right_container .submit_btn {
   margin-top: 5px;
   border: 1px solid #707070;
   font-size: var(--h6);
@@ -2575,12 +2572,12 @@ input[type="number"]::placeholder {
   margin: 0 auto;
 }
 
-.gallery_images{
+.gallery_images {
   padding-bottom: 7rem;
 }
 
 .gallery_column {
-  -ms-flex: 25%; 
+  -ms-flex: 25%;
   flex: 25%;
   max-width: 25%;
   padding: 0 5px;
@@ -2609,7 +2606,7 @@ input[type="number"]::placeholder {
 }
 
 /*  ----------------------- Gallery Contact Form ---------------------- */
-.gallery_contact_form{
+.gallery_contact_form {
   background-image: url("/assets/images/gallery/Mask\ Group\ 2660.png");
   height: 733px;
   width: 100%;
@@ -2622,41 +2619,36 @@ input[type="number"]::placeholder {
   justify-content: center;
 }
 
-.gallery_form_content{
+.gallery_form_content {
   display: flex;
   align-items: center;
 }
 
 .gallery_form_content .form_left,
-.gallery_form_content .form_right
-{
+.gallery_form_content .form_right {
   width: 50%;
 }
 
-.gallery_form_content .form_right
-{
+.gallery_form_content .form_right {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-
-.gallery_form_content .form_left h1{
+.gallery_form_content .form_left h1 {
   font-family: var(--gelion-black);
   font-size: var(--h1);
   line-height: 65px;
   width: 50%;
 }
 
-.form_right .form_right_container{
-  background-color: #F5F6F7;
+.form_right .form_right_container {
+  background-color: #f5f6f7;
   padding: 1.3rem;
   height: 608px;
   width: 396px;
 }
 
-
-
-.gallery_footer{
+.gallery_footer {
   background-color: #fc535c;
 }
