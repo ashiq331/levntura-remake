@@ -188,12 +188,6 @@ img {
   z-index: 999;
 }
 
-.header.scrolled {
-  background-color: var(--white);
-  transition: 0.5s ease;
-  z-index: 200;
-}
-
 .header .home__navabr {
   display: flex;
   justify-content: space-between;
@@ -2134,7 +2128,6 @@ header .btn {
 
 .tour_images {
   background-color: var(--bg-three);
-
 }
 
 .images-content .row {
@@ -2536,6 +2529,11 @@ input[type="number"]::placeholder {
   color: #fc535c;
 }
 
+#gallery_header {
+ mix-blend-mode: exclusion
+ ;
+}
+
 .gallery_section {
   width: 100%;
   height: 80vh;
@@ -2574,6 +2572,13 @@ input[type="number"]::placeholder {
 
 .gallery_images {
   padding-bottom: 7rem;
+}
+
+.gallery_images-content .row {
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
 }
 
 .gallery_column {

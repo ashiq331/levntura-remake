@@ -142,6 +142,7 @@
   .counter_content {
     gap: 1rem;
   }
+
   /* --------------------------- Section Ten --------------------- */
   .testimonial_content .left_content h1 {
     font-size: 56px;
@@ -151,6 +152,7 @@
   .testimonial_content .left_content h1 .white {
     margin-left: 3rem;
   }
+
   .testimonial_content .right_content,
   .testimonial_content .left_content {
     width: 100%;
@@ -208,6 +210,17 @@
     position: relative;
     width: 100%;
     height: 400px;
+  }
+
+
+/* --------------------------------------- Gallery Page Start ----------------------------------------------- */
+
+  .gallery_hedings h1 {
+    width: 70%;
+  }
+
+  .gallery_hedings p {
+    width: 60%;
   }
 }
 
@@ -286,7 +299,10 @@
   .venture_headings h1,
   .world_top_headings h1,
   .images_content h1,
-  .contact_heading h1 {
+  .contact_heading h1,
+  .gallery_hedings h1,
+  .gallery_form_content .form_left h1
+  {
     font-size: 58px;
     text-transform: uppercase;
     line-height: 58px;
@@ -1229,6 +1245,50 @@
     align-items: center;
     justify-content: center;
   }
+
+  /* --------------------------------------- Gallery Page Start ----------------------------------------------- */
+
+  .gallery_hedings h1 {
+    width: 90%;
+    font-size: var(--h1);
+    list-style: 48px;
+  }
+
+  .gallery_hedings p {
+    width: 80%;
+  }
+
+  .gallery_contact_form {
+    height: auto;
+    padding: 4rem 0;
+  }
+
+  
+  .gallery_form_content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .gallery_form_content .form_left,
+  .gallery_form_content .form_right {
+    width: 100%;
+  }
+
+  .gallery_form_content .form_left h1  {
+    width: 70%;
+    font-size: var(--h1);
+    line-height: 48px;
+  }
+
+  .form_right .form_right_container {
+    background-color: #f5f6f7;
+    padding: 1.3rem;
+    height: 608px;
+    width: 95%;
+  }
+  
+
+
 }
 
 @media screen and (max-width: 550px) {
@@ -1278,7 +1338,6 @@
     align-items: flex-start;
     gap: 3.5rem;
   }
-
 }
 
 @media screen and (max-width: 450px) {
