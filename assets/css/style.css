@@ -2317,7 +2317,7 @@ header .btn {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .contact_left,

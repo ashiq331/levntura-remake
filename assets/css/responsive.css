@@ -236,6 +236,18 @@
   .education_article p {
     width: 90%;
   }
+
+  /* --------------------------------------- Contact Page Start ----------------------------------------------- */
+
+  .contact_left {
+    padding-bottom: 16rem;
+    padding-top: 10rem;
+  }
+
+  .contact_right_bottom {
+    position: absolute;
+    bottom: -25rem;
+  }
 }
 
 @media screen and (max-width: 880px) {
@@ -273,7 +285,8 @@
   .about_left_content .about_big_heading,
   .venture_headings h1,
   .world_top_headings h1,
-  .images_content h1 {
+  .images_content h1,
+  .contact_heading h1 {
     font-size: 58px;
     text-transform: uppercase;
     line-height: 58px;
@@ -455,6 +468,23 @@
     width: 70%;
     margin-top: -4rem;
     z-index: 1;
+  }
+
+  /* ------------------------ Contact page Start --------------------- */
+
+  .contact_left {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.2rem;
+  }
+
+  .contact_heading h1 {
+    width: 90%;
+  }
+
+  .contact_right_bottom {
+    width: 47%;
   }
 }
 
@@ -667,6 +697,51 @@
 
   .country .country_down p {
     width: 70%;
+  }
+
+  /* ------------------------ Contact page Start --------------------- */
+  .contact_content {
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: flex-start;
+  }
+  .contact_left,
+  .contact_right {
+    width: 100%;
+    height: 100%;
+  }
+
+  .contact_heading h1 {
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  .contact_left {
+    padding-bottom: 1rem;
+    padding-top: 10rem;
+  }
+
+  .contact_right_bottom {
+    position: absolute;
+    bottom: -20rem;
+    width: 80%;
+    height: min-content;
+    padding: 3rem 2rem;
+  }
+
+  .contact_right {
+    height: 70vh;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .contact_right_top img {
+    margin-top: 3rem;
+  }
+
+  .location_top p {
+    margin-top: 14rem;
+    width: 85%;
   }
 }
 
@@ -1143,9 +1218,8 @@
     width: 90%;
     padding-bottom: 1.5rem;
   }
-  
 
-  .about_bottom_content .about_bottom-left{
+  .about_bottom_content .about_bottom-left {
     order: 2;
     margin-bottom: 1rem;
   }
@@ -1155,7 +1229,6 @@
     align-items: center;
     justify-content: center;
   }
-
 }
 
 @media screen and (max-width: 550px) {
@@ -1190,6 +1263,22 @@
     height: 379px;
     width: 100%;
   }
+
+  /* ------------------------ Contact page Start --------------------- */
+
+  .contact_right_bottom {
+    bottom: -18rem;
+    margin-right: 0.7rem;
+    width: 95%;
+    height: auto;
+    padding: 2rem 1rem;
+  }
+  .location_bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3.5rem;
+  }
+
 }
 
 @media screen and (max-width: 450px) {
