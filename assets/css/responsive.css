@@ -1,3 +1,70 @@
+
+@media only screen and (min-width:1367px){    .card__text {
+  width: 50%;
+  height: 693px;
+  background-color: var(--white);
+  padding: 3rem;
+  padding-left: 10rem;
+  position: absolute;
+  top: -8rem;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+} .left__card p {
+  width: 560px;
+  font-size: var(--p);
+  color: #0c0f11;
+  opacity: 0.5;
+} .left__card  h1 {
+  font-family: var(--gelion-black);
+  text-transform: uppercase;
+  font-size: var(--h2);
+  font-weight: 900;
+  line-height: 45px;
+  padding-bottom: 18px;
+  width: 560px;
+} .title {
+  font-size: var(--link);
+  position: absolute;
+  left: 36%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  color: #002d2d;
+}  .images .top_one {
+  left: 39%;
+  top: 2rem;
+  width: 274px;
+  height: 327px;
+}  .images .top_two {
+  right: 39%;
+  top: 1rem;
+  width: 346px;
+  height: 343px;
+} .images .center_two {
+  right: 35%;
+  top: 36%;
+  width: 256px;
+  height: 289px;
+}  .images .center_one {
+  left: 35%;
+  top: 40%;
+  width: 336px;
+  height: 322px;
+}  .images .bottom_one {
+  bottom: 0;
+  left: 39%;
+  width: 336px;
+  height: 220px;
+} .images .bottom_two {
+  right: 39%;
+  bottom: 0;
+  width: 317px;
+  height: 327px;
+} }
+
+
 @media screen and (max-width: 1200px) {
   .container {
     padding-left: 3rem !important;
