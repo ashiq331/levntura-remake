@@ -40,12 +40,13 @@
     color: #002d2d;
   }
 
-  .images .top_one {
+  /* .images .top_one {
     left: 39%;
     top: 2rem;
     width: 274px;
     height: 327px;
   }
+
   .images .top_two {
     right: 39%;
     top: 1rem;
@@ -79,7 +80,7 @@
     bottom: 0;
     width: 317px;
     height: 327px;
-  }
+  } */
 }
 
 @media screen and (max-width: 1200px) {
