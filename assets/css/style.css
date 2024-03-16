@@ -2040,6 +2040,159 @@ header .btn {
   margin-top: 3rem;
 }
 
+/* ------------------------ Mission Section ------------------------ */
+
+.mission{
+  padding: 7rem 0;
+  background-color: var(--bg-three);
+}
+
+.mission_top{
+  background: url("/assets/images/about/mission-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  padding: 3rem 0;
+}
+
+.mission_top_content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mission_top .small_title,
+.mission_top .large_title{
+  width: 50%;
+}
+
+.small_title{
+  color: var(--white);
+}
+
+.small_title h4{
+  font-size: var(--h4);
+  font-family: var(--gelion-regular);
+  text-transform: uppercase;
+}
+
+.small_title .mission-article{
+  display: flex;
+  gap: 12px;
+  width: 85%;
+  margin-top: 1.5rem;
+}
+
+.small_title .mission-article p{
+  width: 40%;
+  font-size: var(--link);
+  line-height: 16px;
+  font-family: var(--gelion-regular);
+}
+
+.small_title .mission-article article{
+  width: 60%;
+  font-size: var(--link);
+  line-height: 16px;
+  font-family: var(--gelion-regular);
+}
+
+.mission_top .large_title{
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+}
+
+.mission_top .large_title h1{
+  font-size: var(--h1);
+  font-family: var(--gelion-black);
+  line-height: 65px;
+  color: #2D0505;
+  width: 60%;
+}
+
+.mission_bottom{
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.mission__list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+ .mission__list-box {
+  padding: 1rem 0;
+  border-top: 1px solid #2d050522;
+  height: 247px;
+  width: 30%;
+  margin-right: 25px !important;
+  cursor: default;
+}
+
+.mission__list-box .number{
+  opacity: 0.5;
+  font-size: var(--h5);
+  font-family: var(--gelion-regular);
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.mission__list-box h4{
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-family: var(--gelion-light);
+  color: #2D0505;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.mission__list-box p {
+  font-size: var(--link);
+  color: #2D0505;
+  font-family: var(--gelion-regular);
+}
+
+.mission__list-box:hover .number {
+  opacity: 0;
+  -webkit-transform: translateY(-40px);
+  -ms-transform: translateY(-40px);
+  transform: translateY(-40px);
+}
+
+.mission__list-box:hover h4 {
+  color: var(--primary-color);
+  -webkit-transform: translateY(-40px);
+  -ms-transform: translateY(-40px);
+  transform: translateY(-40px);
+}
+
+.mission__list-box p {
+  -webkit-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.mission__list-box:hover p {
+  -webkit-transform: translateY(-40px);
+  -ms-transform: translateY(-40px);
+  transform: translateY(-40px);
+}
+
 /* ----------------------- About Section Five --------------------- */
 
 .world_wide {
