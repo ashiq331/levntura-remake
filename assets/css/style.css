@@ -441,7 +441,7 @@ header .btn {
 .home {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
 .home video {
@@ -454,9 +454,10 @@ header .btn {
 }
 
 .home__content {
-  padding-top: 50vh;
   position: relative;
   color: var(--white);
+  padding-top: 31%;
+  padding-bottom: 15%;
 }
 
 .stroke_text {
@@ -567,7 +568,7 @@ header .btn {
   padding: 3rem;
   padding-left: 10rem;
   position: absolute;
-  top: -8rem;
+  top: -15%;
   z-index: -1;
 }
 
