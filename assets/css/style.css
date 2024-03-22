@@ -173,6 +173,7 @@ img {
   overflow: hidden;
 }
 
+
 /*--------------------------- HEADER ----------------------------------*/
 
 .header .btn {
@@ -391,7 +392,6 @@ header .btn {
   .header {
     padding: 20px 30px;
     position: fixed;
-    mix-blend-mode: difference;
   }
 
   .header .logo img {
@@ -2130,6 +2130,7 @@ header .btn {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
  .mission__list-box {
@@ -2810,4 +2811,141 @@ input[type="number"]::placeholder {
 
 .gallery_footer {
   background-color: #fc535c;
+}
+
+
+
+
+
+/* ------------------------------------- Blog Page Start --------------------------------------- */
+
+.blog_hero{
+  padding-top: 15rem;
+  padding-bottom: 5rem;
+}
+
+.blog_content{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.blog_left, .blog_right{
+  width: 50%;
+}
+
+.blog_left .headings h6{
+  font-size: var(--link);
+  text-transform: uppercase;
+  color: #FD9444;
+  padding-bottom: 1rem;
+}
+
+.blog_left .headings h1{
+  font-size: var(--h1);
+  font-family: var(--gelion-black);
+  line-height: 65px;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+}
+
+.blog_left .headings p{
+  font-size: var(--p);
+  line-height: 21px;
+  font-family: var(--gelion-regular);
+  color: var(--black);
+  opacity: .5;
+  width: 70%;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  margin: 20px auto;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 3rem;
+}
+
+/* Search input */
+.search-input {
+  flex: 1;
+  padding: 15px;
+  font-size: 16px;
+  outline: none;
+  background-color: #F5F6F7;
+  border: 1px solid #F5F6F7;
+
+}
+
+.search-input::placeholder {
+  font-size: 14px;
+  font-family: var(--gelion-regular);
+}
+
+/* Search button */
+.search-button {
+  color: var(--black);
+  background-color: #F5F6F7;
+  border: none;
+  padding: 15px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button i{
+  font-size: 16px;
+}
+
+
+/* -------------------- Main Blog Content ------------------------*/
+
+.w-30{
+  width: 30.5%;
+}
+
+.h-288{
+  height: 288px;
+}
+
+.w-60{
+  width: 62%;
+}
+
+.h-450{
+  height: 450px;
+}
+
+
+.main_blog_content{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1.2rem;
+  row-gap: 4rem;
+  flex-wrap: wrap;
+  padding-bottom: 10rem;
+}
+
+.main_blog_content .blog_content_box{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.main_blog_content .blog_content_box .blog_img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main_blog_content .blog_content_box .blog_title h1{
+  font-size: 28px;
+  line-height: 26px;
+  font-family: var(--gelion-light);
+  width: 80%;
+  color: #0C0F11;
+  text-transform: capitalize;
 }

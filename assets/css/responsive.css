@@ -392,7 +392,8 @@
   .images_content h1,
   .contact_heading h1,
   .gallery_hedings h1,
-  .gallery_form_content .form_left h1 {
+  .gallery_form_content .form_left h1,
+  .mission_top .large_title h1 {
     font-size: 58px;
     text-transform: uppercase;
     line-height: 58px;
@@ -574,6 +575,11 @@
     width: 70%;
     margin-top: -4rem;
     z-index: 1;
+  }
+
+  /* ---------------- Mission ------------ */
+  .mission_top .large_title h1 {
+    width: 90%;
   }
 
   /* ------------------------ Contact page Start --------------------- */
@@ -958,7 +964,7 @@
     padding-bottom: 18px;
   }
 
-  .places .card__container{
+  .places .card__container {
     margin-top: 5rem;
   }
 
@@ -1273,6 +1279,54 @@
     line-height: 48px;
   }
 
+  /* ---------------- Mission ------------ */
+  .mission_top {
+    background: none;
+    padding: 3rem 0;
+  }
+  .mission_top_content {
+    flex-direction: column;
+  }
+
+  .mission_top .small_title,
+  .mission_top .large_title,
+  .small_title .mission-article{
+    width: 100%;
+  }
+
+  .small_title .mission-article p{
+    width: 50%;
+  }
+  
+  .small_title .mission-article article{
+    width: 50%;
+  }
+
+  .mission_top .small_title {
+    background-color: #fd9444;
+    padding: 1rem;
+  }
+
+  .mission_top .large_title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+  }
+
+  .mission_top .large_title h1 {
+    width: 70%;
+    padding-top: 1rem;
+  }
+
+  .mission_bottom{
+    margin-top: 2rem;
+    gap: 1rem;
+  }
+
+  .mission__list-box{
+    width: 43%;
+  }
+
   /* -------------------------------------- Image Container / Section Seven------------------------- */
 
   .images-content .row {
@@ -1433,10 +1487,10 @@
     align-items: flex-start;
     gap: 3.5rem;
   }
+
 }
 
 @media screen and (max-width: 450px) {
-  
   .home__content {
     padding-top: 60%;
     padding-bottom: 30%;
@@ -1543,6 +1597,13 @@
     width: 100%;
     margin-bottom: 1rem;
   }
+
+  
+  /* --------------- Mission --------------- */
+  .mission__list-box{
+    width: 95%;
+  }
+
 }
 
 @media screen and (max-width: 380px) {
@@ -1551,7 +1612,7 @@
     padding-bottom: 40%;
   }
 
-  .places .card__container{
+  .places .card__container {
     margin-top: 10rem;
   }
 }
