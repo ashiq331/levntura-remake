@@ -349,7 +349,7 @@
 
   .contact_right_bottom {
     position: absolute;
-    bottom: -25rem;
+    bottom: -15rem;
   }
 }
 
@@ -1476,12 +1476,17 @@
   /* ------------------------ Contact page Start --------------------- */
 
   .contact_right_bottom {
-    bottom: -18rem;
+    bottom: -17rem;
     margin-right: 0.7rem;
     width: 95%;
     height: auto;
     padding: 2rem 1rem;
   }
+
+  .contact_right_top img {
+    margin-top: 1rem;
+}
+
   .location_bottom {
     flex-direction: column;
     align-items: flex-start;
@@ -1614,5 +1619,34 @@
 
   .places .card__container {
     margin-top: 10rem;
+  }
+
+    /* ------------------------ Contact page Start --------------------- */
+
+    .contact_right_bottom {
+      bottom: -22rem;
+      margin-right: 0.7rem;
+      width: 95%;
+      height: auto;
+      padding: 2rem 1rem;
+    }
+  
+    .contact_right_top img {
+      margin-top: 1rem;
+  }
+}
+
+@media screen and (max-height: 680px) {
+
+    /* ------------------------ Contact page Start --------------------- */
+    .contact_right_bottom {
+      bottom: -32rem;
+      margin-right: 0.7rem;
+      width: 95%;
+      height: auto;
+    }
+  
+    .contact_right_top img {
+      margin-top: 1rem;
   }
 }
